@@ -1,31 +1,53 @@
 {
-    "name": "template-gulp",
-    "version": "2.0.0",
-    "description": "",
-    "main": "gulpfile.js",
-    "scripts": {
-        "stylelint": "stylelint \"**/*.scss\"",
-        "stylelint:fix": "stylelint \"**/*{.css,.scss}\" --fix",
-        "deploy": "gh-pages -d app"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "browser-sync": "^2.26.14",
-        "gh-pages": "^3.1.0",
-        "del": "^6.0.0",
-        "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^7.0.1",
-        "gulp-concat": "^2.6.1",
-        "gulp-html-minifier-terser": "^6.0.1",
-        "gulp-sass": "^4.1.0",
-        "gulp-sourcemaps": "^3.0.0",
-        "gulp-uglify": "^3.0.2",
-        "prettier": "^2.3.0",
-        "stylelint": "^13.9.0",
-        "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
-        "stylelint-order": "^4.1.0",
-        "stylelint-scss": "^3.18.0"
-    }
+   "name": "trans",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+      "@types/jest": "^29.2.3",
+      "@types/node": "^18.11.9",
+      "@types/react": "^18.0.25",
+      "@types/react-dom": "^18.0.9",
+      "axios": "^1.1.2",
+      "cors": "^2.8.5",
+      "formik": "^2.2.9",
+      "i18next": "^21.10.0",
+      "i18next-browser-languagedetector": "^6.1.8",
+      "i18next-http-backend": "^1.4.4",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "react-i18next": "^11.18.6",
+      "react-loader-spinner": "^5.3.4",
+      "react-router-dom": "^6.4.3",
+      "react-scripts": "5.0.1",
+      "sass": "^1.55.0",
+      "swiper": "^8.4.3",
+      "typescript": "^4.9.3"
+   },
+   "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+   },
+   "eslintConfig": {
+      "extends": [
+         "react-app",
+         "react-app/jest"
+      ]
+   },
+   "browserslist": {
+      "production": [
+         ">0.2%",
+         "not dead",
+         "not op_mini all"
+      ],
+      "development": [
+         "last 1 chrome version",
+         "last 1 firefox version",
+         "last 1 safari version"
+      ]
+   },
+   "devDependencies": {
+      "@types/styled-components": "^5.1.26"
+   }
 }

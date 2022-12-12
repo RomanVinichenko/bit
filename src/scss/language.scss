@@ -1,0 +1,109 @@
+
+
+.languages-rows{
+    display: flex;
+}
+.languages-columns{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: black ;
+    margin-top: 5px;
+}
+.languages-text{
+    color: black;
+}
+.language-input{
+    width: 100%;
+    color: black;
+}
+.language-input-wrapper{
+    width: 100%;
+    margin-top: 15px;
+}
+.language-dont-changable{
+    margin-top: 18px;
+}
+.save-content-flex{
+    display: flex;
+}
+.save-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.save-button{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 145);
+    color: white;
+    width: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.succsess-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 156, 32);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+    height: 40px;
+    margin-right: 15px;
+}
+.error-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(177, 17, 17);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.add-object-flex{
+    display: flex;
+    align-items: center;
+}
+.add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 145);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 25px;
+    padding: 15px;
+}
+.add-object-flex input{
+    height: 40px;
+}
+.langauge-center-auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    div{
+        margin-top: 25px;
+        width: 150px;
+        height: 40px;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+    }
+}

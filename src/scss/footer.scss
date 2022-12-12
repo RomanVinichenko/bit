@@ -1,0 +1,271 @@
+.mb-14 {
+   margin-bottom: 49px !important;
+}
+
+.footer {
+   background-color: black;
+   margin-top: -2px;
+   padding-top: 50px;
+
+   &-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media (max-width: 1280px) {
+         gap: 20px;
+      }
+
+      @media (max-width: 992px) {
+         flex-wrap: wrap;
+         gap: 0;
+      }
+   }
+
+   &-link {
+      display: flex;
+      flex-direction: column;
+      margin-top: 13px;
+
+      a,
+      span,
+      button {
+         text-decoration: none !important;
+         color: $lightgrey-color;
+
+         &:hover{
+            color: white;
+         }
+
+         @media (max-width: 992px) {
+            font-size: 12px;
+         }
+      }
+
+      @media (max-width: 992px) {
+         gap: 5px;
+         margin: 0 0 25px;
+      }
+   }
+
+   &-col {
+      @media (max-width: 992px) {
+         width: 45%;
+
+         &:last-of-type {
+            width: 100%;
+         }
+
+         &:last-of-type {
+            width: 100%;
+         }
+      }
+
+      &-logo {
+         @media (max-width: 992px) {
+            width: 100%;
+            margin-bottom: 25px;
+            order: 1;
+         }
+      }
+   }
+
+}
+
+.mobile-logo-footer {
+   display: none;
+
+   @media (max-width:993px) {
+      display: block;
+      margin-bottom: 25px;
+   }
+}
+
+.pc-logo-footer {
+   @media (max-width:993px) {
+      display: none;
+   }
+}
+
+.social-icons {
+   flex-direction: row;
+   gap: 15px;
+}
+
+
+.logo-text {
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   height: 23px;
+   cursor: pointer;
+   text-decoration: none;
+
+   &:hover {
+      color: white;
+      text-decoration: none;
+   }
+
+   &:active {
+      color: white;
+      text-decoration: none;
+   }
+
+   &:link {
+      color: white;
+      text-decoration: none;
+   }
+
+   &:visited {
+      color: white;
+      text-decoration: none;
+
+   }
+}
+
+.copyright-text {
+   font-size: 14px;
+   color: $lightgrey-color;
+   text-align: center;
+   margin-top: 49px;
+
+   @media (max-width: 992px) {
+      text-align: left;
+      font-size: 10px;
+   }
+}
+
+.pc-logo-footer {
+   margin-top: 2px;
+}
+
+.footer-col {
+   margin-top: 4px;
+}
+
+.footer-col-1 {
+   margin-top: 4px;
+}
+
+.footer-col-2 {
+   margin-top: 4px;
+}
+
+.footer-col-3 {
+   margin-top: 4px;
+}
+
+.footer-col-4 {
+   margin-top: 4px;
+}
+
+.footer-col-5 {
+   margin-top: 4px;
+}
+
+.footer-link a {
+   margin-top: -4px;
+}
+
+.footer-link a:nth-child(2) {
+   margin-top: 11px;
+}
+
+.footer-link a:nth-child(3) {
+   margin-top: 11px;
+}
+
+.footer-link a:nth-child(4) {
+   margin-top: 8px;
+}
+
+.footer-link a:nth-child(5) {
+   margin-top: 12px;
+}
+
+.footer-link a:nth-child(6) {
+   margin-top: 7px;
+}
+
+.footer-link a:nth-child(7) {
+   margin-top: 12px;
+}
+
+
+.footer-link-h6-heading {
+   margin: 26px 0 10px 0;
+   font-size: 16px;
+   font-weight: 600;
+   color: white;
+
+   @media (max-width: 992px) {
+      font-size: 14px;
+   }
+}
+
+.footer-link-5-item {
+   display: flex;
+   color: #ACADAF;
+   flex-direction: column;
+   margin-top: 10px;
+
+   a{
+      cursor: pointer;
+      &:hover{
+         color: white;
+         cursor: pointer;
+      }
+   }
+}
+
+.footer-link-5-item span {
+   color: #ACADAF;
+   margin-top: 1px;
+}
+
+.footer-link-5-item span:nth-child(2) {
+   color: #ACADAF;
+   margin-top: 12px;
+}
+
+.footer-link-5-item span:nth-child(3) {
+   color: #ACADAF;
+   margin-top: 12px;
+}
+
+.footer-link-5-item span a {
+   color: #ACADAF;
+   text-decoration: none;
+
+}
+.copyright-flex{
+   display: flex;
+   justify-content: center;
+}
+.footer-link-h6-heading_volume {
+   margin: 28px 0 17px 0;
+   font-size: 16px;
+   font-weight: 600;
+   color: white;
+
+   @media (max-width: 992px) {
+      font-size: 14px;
+   }
+}
+
+.footer-link-volume {
+   color: #ACADAF;
+   margin-top: 1px;
+}
+
+.footer-link-volume span {
+   margin-top: 1px;
+}
+
+.footer-link-volume span:nth-child(2) {
+   margin-top: 13px;
+}
+
+.footer-link-volume span:nth-child(3) {
+   margin-top: 13px;
+}

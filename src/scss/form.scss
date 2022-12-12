@@ -1,0 +1,153 @@
+@import "variables";
+
+.form-input {
+  border-radius: 4px;
+  border: 0;
+  padding: 23px;
+  outline: none;
+  min-width: 350px;
+  background: rgba(255, 255, 255, 0.26);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 4px;
+  height: 72px;
+  margin-top: -1px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.form-input::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+
+}
+.email-input-main{
+  padding: 10px 24px;
+  gap: 10px;
+  
+  width: 350px;
+  height: 72px;
+  
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #879DC5;
+  border-radius: 4px;
+  font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+
+color: #879DC5;
+margin-top: 18px;
+    margin-left: 2px;
+    outline: none;
+
+}
+
+.btn-main{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 193px;
+  height: 72px;
+  transition: 0.7s;
+  background: #0052FF;
+  border: 1px solid #0052FF;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  margin-top: 18px;
+    margin-left: 1px;
+  color: white !important;
+
+  &:hover{
+    transition: 0.7s;
+    background-color: white;
+    color: #0052FF !important;
+  }
+
+}
+.btn-group{
+  display: flex;
+  white-space: nowrap;
+}
+/* The container */
+.form-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 30px;
+}
+
+/* Hide the browser's default checkbox */
+.form-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.form-label-checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+/* On mouse-over, add a grey background color */
+.form-label:hover input ~ .form-label-checkmark {
+  border: 2px solid $blue-color;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-label input:checked ~ .form-label-checkmark {
+  border-color: $blue-color;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.form-label-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form-label input:checked ~ .form-label-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-label .form-label-checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: 1px solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  transition: .3s;
+}
+
+.form-label input[type="radio"] + .form-label-checkmark:after {
+  border-radius: 50%;
+  border-width: 2px;
+  background-color: $blue-color;
+  border: 0;
+  width: 6px;
+  height: 6px;
+  top: 2px;
+  left: 2px;
+}

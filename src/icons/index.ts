@@ -1,0 +1,6 @@
+export { default as IconDecorationNetBig } from './decoration-net-big'
+export { default as IconDecorationNetSmall } from './decoration-net-small'
+export { default as IconLogo } from './logo'
+export { default as IconLogoIcon } from './logo-icon'
+export { default as IconDropdownArrow } from './dropdown-arrow'
+export { default as IconChecked } from './checked'

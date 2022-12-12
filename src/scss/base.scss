@@ -1,0 +1,47 @@
+@import 'variables';
+@font-face {
+   font-family: DM Sans;
+   src: url(../fonts/DMSans-Regular.ttf);
+}
+
+.dark-bg {
+   background-color: $black-color1;
+
+   * {
+      color: #000000;
+   }
+}
+body {
+   margin: 0;
+}
+button {
+   background-color: transparent;
+   border: none;
+   color: inherit;
+   cursor: pointer;
+}
+
+* {
+   box-sizing: border-box;
+   font-family: DM Sans, sans-serif;
+}
+
+.container-parent {
+   max-width: 1480px;
+   margin: 0 auto;
+   position: relative;
+
+   @media (max-width: 1600px) {
+      max-width: 90%;
+   }
+
+
+   @media (max-width: 576px) {
+      max-width: 100%;
+      margin: 0 20px;
+   }
+}
+
+@import 'typography';
+@import 'header';
+@import 'footer';

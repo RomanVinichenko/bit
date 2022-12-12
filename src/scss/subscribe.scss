@@ -1,0 +1,123 @@
+.subscribe {
+  &-section {
+    position: relative;
+    background-color: #0052FF;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 532px;
+    overflow: hidden;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+
+    .h2-heading {
+      margin: 0 0 50px;
+
+      @media (max-width: 992px) {
+        margin: 0 0 25px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      padding: 50px 0;
+    }
+  }
+
+  &-form {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.cubic1-subscribe{
+  position: absolute;
+  left: 350px;
+  bottom: 0;
+  @media (max-width:992px){
+    left: 100px;
+  }
+
+  @media (max-width:605px){
+    left: 20px;
+  }
+}
+.cubic2-subscribe{
+  position: absolute;
+  right: 0px;
+  left: 80%;
+  bottom: 0;
+
+  @media (max-width:992px){
+    left: 50%;
+  }
+  @media (max-width:605px){
+
+    left: 72%;
+    top: 210px;
+
+  }
+}
+.cubic3-subscribe{
+
+  position: absolute;
+  right: 0px;
+  left: 94%;
+  bottom: 0;
+  top: 217px;
+
+  @media (max-width:1300px){
+    left: 80%;
+  }
+  @media (max-width:992px){
+    top: 73px;
+  }
+  @media (max-width:605px){
+    display: none;
+  }
+
+}
+.cubic4-subscribe{
+
+  position: absolute;
+  right: 0px;
+  left: 40%;
+  bottom: 0;
+  top: 0;
+  @media (max-width:605px){
+    left: 82%;
+    top: 73px;
+  }
+}
+.cubic5-subscribe{
+
+  position: absolute;
+  right: 0px;
+  left: 126px;
+  bottom: 0;
+  top: 152px;
+  @media (max-width:992px){
+    top: 90px;
+  }
+
+  @media (max-width:605px){
+    left: -60px;
+    right: 10px;
+  }
+  @media (max-width:420px){
+    left: -75px;
+  }
+}
+
+.container-parent-h2-heading {
+  font-size: 42px;
+  margin-top: -21px;
+}
+.subscribe-form-item{
+  margin-top: 64px;
+}

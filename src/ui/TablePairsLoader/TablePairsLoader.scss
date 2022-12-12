@@ -1,0 +1,32 @@
+.table-load {
+   min-width: 650px;
+}
+
+.load-table-item {
+   height: 44px;
+   margin: auto;
+   position: relative;
+}
+
+.load-table-item::after {
+   content: '';
+   border-radius: 210px;
+   width: calc(100% - 50px);
+   height: calc(100% - 27px);
+   top: 0;
+   left: 0;
+   position: absolute;
+   background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 100%),
+      linear-gradient(rgba(221, 221, 221, 0.137) 50px, transparent 0);
+   background-repeat: no-repeat;
+   background-size: 75px 175px, 100% 100px, 100% 16px, 100% 30px;
+   background-position: -185px 0, center 0, center 115px, center 142px;
+   box-sizing: border-box;
+   animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+   to {
+      background-position: 185px 0, center 0;
+   }
+}

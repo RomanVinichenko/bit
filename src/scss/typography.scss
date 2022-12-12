@@ -1,0 +1,214 @@
+@font-face {
+  font-family: DM Sans;
+  src: url('../fonts/DMSans-Regular.ttf');
+}
+
+@import "variables";
+
+.btn-primary-blue {
+  background-color: #0052FF !important;
+  border: 1px solid #0052FF !important;
+  padding: 8px 19px;
+  border-radius: 4px;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: $blue-color;
+  }
+}
+
+.h1-heading,
+.h2-heading {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.trade-like-pro-main-flex-h1-heading {
+  font-size: 59px;
+  font-weight: 600;
+  margin-top: 25px;
+  position: relative;
+  top: 4px;
+  left: -1px;
+  letter-spacing: 0.25px;
+
+  @media (max-width:460px){
+    text-align: center;
+  }
+}
+
+.make-your-grow {
+  font-weight: 300;
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  margin-left: 1px;
+  line-height: 123%;
+  letter-spacing: 1px;
+  color: #0A0B0D;
+  font-family: DM Sans, sans-serif;
+}
+
+.trade-now-text {
+
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 129%;
+  width: 564px;
+  margin-top: 37px;
+  margin-left: 0px;
+  letter-spacing: 1px;
+  color: #0A0B0D;
+
+  @media (max-width:1240px) {
+    width: auto;
+    font-size: 50px;
+  }
+}
+
+.h1-heading {
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
+}
+
+.align-center {
+  text-align: center;
+}
+
+.h2-heading {
+  @media (max-width: 992px) {
+    font-size: 24px;
+  }
+}
+
+.h3-heading {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+
+  @media (max-width:768px) {
+    font-size: 20px;
+  }
+}
+
+.h6-heading {
+  margin: 0 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+.text {
+  &-big {
+    font-size: 24px;
+    margin-top: 19px;
+
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
+  }
+
+  &-lightgrey {
+    margin-top: 19px;
+    margin-top: 9px;
+    margin-left: 3px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    /* line-height: 140%; */
+    color: #5B616E;
+  }
+
+  &-darkblue {
+    color: $dark-blue-color;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 26px 40px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 191px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: .7s;
+
+  @media (max-width: 992px) {
+    padding: 13px 30px;
+
+    +.btn {
+      margin-left: 20px;
+    }
+  }
+
+  &-blue-fill {
+    background-color: #0080FF;
+    border: 1px solid #0080FF;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $blue-color;
+    }
+  }
+
+  &-white-fill {
+    background-color: white;
+    border: 1px solid white;
+    align-self: center;
+    color: $blue-color;
+    top:  -2px;
+    height: 71px;
+    &:hover {
+      transition: .7s;
+      background-color: $blue-color;
+      color: white;
+      border: 1px solid #0052FF ;
+    }
+  }
+
+  &-white {
+    padding: 0 40px;
+    border: 1px solid #FFFFFF;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+
+    &:hover {
+      border-color: $blue-color;
+      color: $blue-color;
+    }
+  }
+
+  &-group {
+    .btn+.btn {
+      margin-left: 25px;
+    }
+  }
+}
+
+.profit-badge {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: $green-dark-color;
+  color: $green-bright-color;
+  font-weight: 500;
+  border-radius: 4px;
+
+  &.decrease {
+    background-color: $red-dark-color;
+    color: $red-bright-color;
+  }
+}

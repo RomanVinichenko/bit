@@ -1,0 +1,45 @@
+$black-color1: #0F0F0F;
+$black-color2: #151515;
+$black-color3: #404040;
+$lightgrey-color: #ACADAF;
+$grey-color1: #BEBEBE;
+$grey-color2: #9EA7B7;
+$dark-blue-color: #556176;
+$blue-color: #0080FF;
+$green-bright-color: #0FD369;
+$red-bright-color: #E90E0E;
+$green-dark-color: #282E2A;
+$red-dark-color: #271A1A;
+:root {
+    --color: #ffffff;
+    --primary-color: #E4E4E4;
+    --color-secondary: #ACADAF;
+    --color-active: #0080FF;
+    --color-active--hover: #1c8cff;
+    --color-active--active: #2690ff;
+    --background:  #0F0F0F;
+    --background-card: #151515;
+    --icon-background: #0f0f0f;
+  
+    --input-background: #1D1D22;
+    --input-background--active: #28282d;
+    --placeholder-color: #9ea7b7;
+  
+    --border-color: #2D3138;
+  
+    --transition-colors: background-color .25s ease-out, color .25s ease-out, border-color .25s ease-out;
+    --button-radius: 4px;
+    --indent-section: 250px;
+  
+    @media (max-width: 900px) {
+      --indent-section: 150px;
+    }
+  
+    @media (max-width: 820px) {
+      --indent-section: 100px;
+    }
+  }
+  
+  html[data-theme='light'] {
+  
+  }

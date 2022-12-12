@@ -1,45 +1,115 @@
 @import 'variables';
+
 @font-face {
-   font-family: DM Sans;
-   src: url(../fonts/DMSans-Regular.ttf);
+  font-family: DM Sans;
+  src: url("../fonts/DMSans-Regular.woff") format("woff"),
+  url("../fonts/DMSans-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DM Sans-Medium;
+  src: url("../fonts/DMSans-Medium.woff") format("woff"),
+  url("../fonts/DMSans-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: DM Sans-Bold;
+  src: url("../fonts/DMSans-Bold.woff") format("woff"),
+  url("../fonts/DMSans-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-display: swap;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 .dark-bg {
-   background-color: $black-color1;
+  background-color: $black-color1;
 
-   * {
-      color: #000000;
-   }
+  * {
+    color: #000000;
+  }
 }
+
 body {
-   margin: 0;
+  margin: 0;
 }
+
 button {
-   background-color: transparent;
-   border: none;
-   color: inherit;
-   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 * {
-   box-sizing: border-box;
-   font-family: DM Sans, sans-serif;
+  box-sizing: border-box;
+  font-family: DM Sans, sans-serif;
 }
 
 .container-parent {
-   max-width: 1480px;
-   margin: 0 auto;
-   position: relative;
-
-   @media (max-width: 1600px) {
-      max-width: 90%;
-   }
-
-
-   @media (max-width: 576px) {
-      max-width: 100%;
-      margin: 0 20px;
-   }
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
 }
 
 @import 'typography';

@@ -1,14 +1,14 @@
 .UserOptionsButton {
-   border: none;
-   background-color: transparent;
-   font-size: 16px;
-   width: 120px;
-   position: relative;
-   left: 16px;
-   top: 1px;
-   white-space: nowrap;
+  position: relative;
+  padding: 0;
+  margin-left: 56px;
+  display: flex;
 
-   @media (max-width:992px){
-      left: 10px;
-   }
+  @media (max-width: 1500px) {
+    margin-left: 40px;
+  }
+
+  span {
+    display: block;
+  }
 }

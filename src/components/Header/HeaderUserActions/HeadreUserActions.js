@@ -8,7 +8,7 @@ import api from '../../../api';
 function HeadreUserActions({auth}) {
 
    return (
-      <ul className="nav-list nav-list-right">
+      <ul className="nav-list-right">
          {auth ? <UserDropdown auth={auth} /> : <UserEnters />}
          <div className='display-control-mobile'>
             <UserOptions auth={auth} />

@@ -45,7 +45,7 @@ top: 17px;
 
 .intro {
   &-section {
-    padding: 100px 0 300px;
+    min-height: 100vh;
     background-size: contain;
     background-position: top right;
     background-repeat: no-repeat;
@@ -171,6 +171,8 @@ top: 17px;
 
   &-row {
     display: flex;
+    align-items: center;
+    height: calc(100vh - 88px);
 
     @media (max-width:1520px){
       justify-content: space-between;

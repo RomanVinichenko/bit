@@ -1,8 +1,7 @@
 body{
-	background-color:  #161724;
+	background-color: #fff;
 }
 .main-wrap{
-	/*font-family: 'Figtree', sans-serif;*/
 	font-family: 'Manrope', sans-serif;
 	width: 100%;
 }
@@ -696,7 +695,7 @@ footer ul>li>a{
 		width: 18px;
 		height: 2px;
 		background-color: #fff;
-		left: 0px;
+		left: 0;
 		transition: 0.3s;
 	}
 	.dad-span-1{

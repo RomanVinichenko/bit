@@ -1,308 +1,323 @@
-.protection-main{
-    font-family: DM Sans, sans-serif;
-    word-break: break-word;
+.protection-main {
+  font-family: DM Sans, sans-serif;
+  word-break: break-word;
 }
 
-.protection-funds-container{
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    padding-top: 80px;
-    padding-bottom: 107px;
+.protection-funds-container {
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 107px;
 }
-.protection-funds-highlights-container{
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    padding-top: 80px;
-    padding-bottom: 107px;
+
+.protection-funds-highlights-container {
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 107px;
 }
-.protection-funds-left{
-    display: flex;
+
+.protection-funds-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.protection-text-1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #0b54ff;
+}
+
+.protection-text-2 {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: white;
+}
+
+.protection-text-3 {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.protection-text-4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 24px;
+  color: #929899;
+}
+
+.protection-info-1 {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+}
+
+.protection-crypto-count {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.protection-text-22 {
+  margin-left: 22px;
+}
+
+.protection-funds-right {
+  width: 389px;
+  height: 351px;
+}
+
+.protection-funds-highlights {
+  width: 1200px;
+  margin: 51px auto 0;
+}
+
+.protection-text-5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: white;
+}
+
+.protection-funds-container {
+  display: flex;
+  margin-top: 72px;
+  justify-content: space-between;
+}
+
+.protection-funds-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.protection-funds-child-image {
+  width: 80px;
+  height: 86.15px;
+}
+
+.protection-funds-child-bold-text {
+  margin-top: 31.85px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+
+.protection-funds-child-small-text {
+  width: 380px;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #929899;
+}
+
+.protection-funds-faq {
+  width: 1200px;
+  margin: 172px auto 0;
+}
+
+.protection-faq-text {
+  color: white;
+  line-height: 38px;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.protection-funds-faq-child {
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.protection-funds-faq-child-flex {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.protection-funds-faq-child-flex span {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: white;
+}
+
+.protection-funds-faq-small-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #929899;
+  margin-top: 12px;
+}
+
+.protection-funds-trade {
+  overflow: hidden;
+  height: 337px;
+  background: #0b54ff;
+  margin-top: 101px;
+  position: relative;
+  background-image: url(../img/protection/bg1.png);
+}
+
+.protection-funds-bg-container {
+  height: 242px;
+  margin: 0 auto;
+  width: 1200px;
+  background-image: url(../img/protection/bg2.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.protection-trade-text-1 {
+  margin: 71px auto 10px auto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: white;
+}
+
+.protection-trade-text-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.register-button-trade {
+  height: 48px;
+  min-width: 160px;
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 48px;
+  color: #0b54ff;
+  text-align: center;
+  padding: 0 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media (max-width: 1235px) {
+  .protection-funds-container {
+    justify-content: space-evenly;
+  }
+  .protection-funds-faq {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .protection-funds-container {
     flex-direction: column;
-}
-
-.protection-text-1{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
-    color: #0b54ff;
-}
-.protection-text-2{
-    margin-top: 16px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    color: white;
-}
-.protection-text-3{
-    margin-top: 24px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: white;
-}
-.protection-text-4{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    margin-top: 24px;
-    color: #929899;
-}
-.protection-info-1{
-    display: flex;
-    margin-top: 32px;
-    justify-content: space-between;
-}
-.protection-crypto-count{
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 6px;
-    color: white;
-}
-.protection-text-22{
-    margin-left: 22px;
-}
-.protection-funds-right{
-    width: 389px;
-    height: 351px;
-}
-.protection-funds-highlights{
-    width: 1200px;
-    margin: 51px auto 0;
-}
-
-.protection-text-5{
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: white;
-}
-
-.protection-funds-container{
-    display: flex;
-    margin-top: 72px;
-    justify-content: space-between;
-}
-.protection-funds-child{
-    display: flex;
-    flex-direction: column;
-}
-.protection-funds-child-image{
-    width: 80px;
-    height: 86.15px;
-}
-
-.protection-funds-child-bold-text{
-    margin-top: 31.85px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    color: white;
-}
-.protection-funds-child-small-text{
-    width: 380px;
-    margin-top: 12px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #929899;
-}
-
-.protection-funds-faq{
-    width: 1200px;
-    margin: 172px auto 0;
-}
-
-.protection-faq-text{
-    color: white;
-    line-height: 38px;
-    font-weight: 700;
-    font-size: 32px;
-    margin-bottom: 50px;
-}
-
-.protection-funds-faq-child{
-    border-bottom: 1px solid #ebebeb;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.protection-funds-faq-child-flex{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.protection-funds-faq-child-flex span{
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 500;
-    color: white;
-}
-
-.protection-funds-faq-small-text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #929899;
-    margin-top: 12px;
-}
-
-.protection-funds-trade{
-    overflow: hidden;
-    height: 337px;
-    background: #0b54ff;
-    margin-top: 101px;
-    position: relative;
-    background-image: url(../img/protection/bg1.png);
-}
-
-.protection-funds-bg-container{
-    height: 242px;
-    margin: 0 auto;
-    width: 1200px;
-    background-image: url(../img/protection/bg2.png);
-    background-size: 100% 100%;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.protection-trade-text-1{
-    margin: 71px auto 10px auto;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 47px;
-    color: white;
-}
-.protection-trade-text-2{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: white;
-}
-
-.register-button-trade{
-    height: 48px;
-    min-width: 160px;
-    background: #fff;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 48px;
-    color: #0b54ff;
-    text-align: center;
-    padding: 0 16px;
-    cursor: pointer;
+    width: 90%;
+    align-items: flex-start;
+  }
+  .protection-funds-left {
+    order: 1;
+    align-items: flex-start;
+    width: 95%;
     margin-top: 15px;
-}
-@media (max-width: 1235px){
-    .protection-funds-container{
-        justify-content: space-evenly;
-    }
-    .protection-funds-faq{
-        width: 90%;
-    }
-}
+  }
+  .protection-funds-right {
+    order: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
-@media (max-width:1100px){
-    .protection-funds-container{
-        flex-direction: column;
-        width: 90%;
-        align-items: flex-start;
-    }
-    .protection-funds-left{
-        order: 1;
-        align-items: flex-start;
-        width: 95%;
-        margin-top: 15px;
-    }
-    .protection-funds-right{
-        order: 0;
-        display: flex;
-        justify-content: center;
-        width: 100%;
+  }
 
-    }
+  .protection-funds-right img {
+    width: 400px;
+  }
 
-    .protection-funds-right img{
-        width: 400px;
-    }
-    
-    .protection-info-child-2{
-        margin-left: 75px;
-    }
-    .protection-info-1{
-        justify-content: flex-start;
-        width: 100%;
-    }
-    .protection-text-1{
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
-        color: #ff8600;
-    }
-    .protection-funds-highlights{
-        width: 90%;
-    }
-    .protection-funds-highlights-container{
-        width: 90%;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 0px;
-    }
-    .protection-funds-child{
-        margin-bottom: 35px;
-    }
-    .protection-funds-faq{
-        margin-top: 25px;
-    }
-    .protection-funds-trade{
-        background-image: none;
-        background-color:#27aec0;
+  .protection-info-child-2 {
+    margin-left: 75px;
+  }
+  .protection-info-1 {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .protection-text-1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ff8600;
+  }
+  .protection-funds-highlights {
+    width: 90%;
+  }
+  .protection-funds-highlights-container {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0px;
+  }
+  .protection-funds-child {
+    margin-bottom: 35px;
+  }
+  .protection-funds-faq {
+    margin-top: 25px;
+  }
+  .protection-funds-trade {
+    background-image: none;
+    background-color: #27aec0;
 
-    }
-    .protection-funds-bg-container{
-        background-image: none;
-        width: 90%;
-    }
+  }
+  .protection-funds-bg-container {
+    background-image: none;
+    width: 90%;
+  }
 }
 
-@media (max-width: 438px){
-    .protection-funds-right{
-        align-items: center;
-    }
-    .protection-funds-right img{
-        width: 90%;
-        height: 58%;
-    }
-    .protection-text-22{
-        margin-left: 0px;
-    }
-    .protection-crypto-wallets{
-        display: flex;
-        flex-direction: column;
-    }
-    .protection-funds-bg-container{
-        word-break: break-word;
-        width: 86%;
-        height: 100%;
-    }
-    .protection-funds-child-small-text{
-        width: 90%;
-    }
-    .protection-funds-trade{
-        padding-bottom: 67px;
-    }
-    .protection-funds-trade{
-        height: 100%;
-    }
+@media (max-width: 438px) {
+  .protection-funds-right {
+    align-items: center;
+  }
+  .protection-funds-right img {
+    width: 90%;
+    height: 58%;
+  }
+  .protection-text-22 {
+    margin-left: 0px;
+  }
+  .protection-crypto-wallets {
+    display: flex;
+    flex-direction: column;
+  }
+  .protection-funds-bg-container {
+    word-break: break-word;
+    width: 86%;
+    height: 100%;
+  }
+  .protection-funds-child-small-text {
+    width: 90%;
+  }
+  .protection-funds-trade {
+    padding-bottom: 67px;
+  }
+  .protection-funds-trade {
+    height: 100%;
+  }
 }

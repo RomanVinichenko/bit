@@ -12,13 +12,14 @@
 }
 
 .trade-like-pro-main-flex-h1-heading {
-  font-size: 59px;
-  font-weight: 600;
-  margin-top: 25px;
   position: relative;
-  top: 4px;
-  left: -1px;
-  letter-spacing: 0.25px;
+  display: block;
+  font-size: 56px;
+  margin-bottom: 72px;
+  line-height: 130%;
+  text-align: left;
+  font-family: "DM Sans-Bold", sans-serif;
+  color: #0A0B0D;
 
   @media (max-width: 460px) {
     text-align: center;

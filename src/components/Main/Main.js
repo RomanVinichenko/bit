@@ -174,9 +174,9 @@ const Main = ({ emailValue, setEmailValue, emailValue2, setEmailValue2 }) => {
                               </NavLink>
                            </div>
                         </div>
-                        <div className='trade-like-pro-right'>
-                           <img src={laptop} />
-                        </div>
+                     </div>
+                     <div className='trade-like-pro-right'>
+                        <img src={laptop} />
                      </div>
                   </div>
                </div>

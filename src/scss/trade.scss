@@ -45,12 +45,8 @@
 }
 
 .trade-like-pro-flex {
-  display: flex;
-  justify-content: space-between;
-
-  @media (max-width: 1420px) {
-    flex-direction: column;
-  }
+  position: relative;
+  z-index: 5;
 }
 
 .trade-like-pro-text {
@@ -58,12 +54,7 @@
   font-weight: 700;
   font-size: 56px;
   line-height: 130%;
-  /* identical to box height, or 73px */
-
   text-align: center;
-
-  /* Title Grey */
-
 }
 
 .trade-like-pro-section {
@@ -76,11 +67,8 @@
 }
 
 .trade-like-pro-item-absoulte-flex {
-  margin-top: 72px;
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  background: #FFFFFF;
+  margin-bottom: 40px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -90,9 +78,8 @@
 }
 
 .trade-like-pro-main-flex {
-  padding-top: 60px;
-
-  @media (max-width: 1420px) {
+  position: relative;
+  @media (max-width: 1100px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,29 +87,15 @@
 }
 
 .trade-like-pro-left {
-  width: 50%;
-  margin-top: 1px;
-
-  @media (max-width: 1420px) {
-    order: 1;
-    width: 100%;
-  }
-
-  @media(max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+  z-index: 5;
 }
 
 .trade-like-pro-right {
-  position: relative;
-  display: flex;
-  margin-top: -70px;
-  margin-left: -132px;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-  @media (max-width: 1420px) {
+  @media (max-width: 1120px) {
     order: 0;
     justify-content: center;
     margin-top: 41px;
@@ -130,140 +103,40 @@
   @media (max-width: 768px) {
     justify-content: flex-end;
   }
-
-  img {
-    background-color: #FFFFFF;
-
-    @media (max-width: 1600px) {
-      width: 90%;
-      height: 80%;
-      background-color: transparent;
-    }
-    @media (max-width: 1420px) {
-      width: 70%;
-    }
-
-
-  }
 }
-
-.trade-like-pro-item-big-text-1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 130%;
-  letter-spacing: 0.8px;
-  margin-top: 0px;
-  margin-left: 2px;
-  @media (max-width: 992px) {
-    font-size: 20px;
-  }
-}
-
-.trade-like-pro-item-big-text-2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 130%;
-  letter-spacing: 0.8px;
-  margin-top: -3px;
-  margin-left: 1px;
-
-  @media (max-width: 992px) {
-    font-size: 20px;
-  }
-}
-
+.trade-like-pro-item-big-text-1,
+.trade-like-pro-item-big-text-2,
 .trade-like-pro-item-big-text-3 {
-  font-style: normal;
-  font-weight: 700;
   font-size: 32px;
-  line-height: 130%;
-  letter-spacing: 0.8px;
-  margin-top: -11px;
-  margin-left: 2px;
-
+  line-height: 1.3;
+  color: #0A0B0D;
+  font-family: "DM Sans-Bold", sans-serif;
+  margin-bottom: 8px;
+  display: block;
   @media (max-width: 992px) {
     font-size: 20px;
   }
 }
 
-.trade-like-pro-item-small-text-1_1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  margin-top: 8px;
-  width: 354px;
-  color: #5B616E;
-  margin-left: 1.5px;
-}
-
-.trade-like-pro-item-small-text-2_2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  margin-top: 8px;
-  margin-left: 2px;
-  width: 344px;
-  /* or 21px */
-  color: #5B616E;
-}
-
+.trade-like-pro-item-small-text-1_1,
+.trade-like-pro-item-small-text-2_2,
 .trade-like-pro-item-small-text-3_3 {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 130%;
-  margin-top: 8px;
-  width: 354px;
-  /* or 21px */
+  line-height: 1.3;
+  padding-right: 37px;
+  display: block;
   color: #5B616E;
-  margin-left: 2px;
 }
 
 .trade-like-pro-item {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  position: relative;
-  margin-bottom: 52px;
-  z-index: 3;
-
-  @media (max-width: 1420px) {
-    width: 48%;
-  }
-
-  @media (max-width: 768px) {
-    text-align: center;
-    width: 90%;
-  }
+  max-width: 386px;
+  width: 100%;
 }
 
 .trade-like-pro-item-absoulte {
-  position: absolute;
-  width: 33%;
-  left: 504px;
-  display: flex;
-  z-index: 2;
-  flex-direction: column;
-  margin-top: 3px;
-
-  @media (max-width: 1600px) {
-    left: 380px;
-  }
-
-  @media (max-width: 1420px) {
-    position: relative;
-    left: 0px;
-    width: 48%;
-  }
-
-  @media (max-width: 768px) {
-    margin-bottom: 35px;
-    width: 90%;
-  }
+  max-width: 386px;
+  width: 100%;
+  margin-left: 118px;
 }
 
 .more-pro-traders {
@@ -296,10 +169,7 @@
   line-height: 22px;
   letter-spacing: 0.4px;
   color: #0052FF;
-  margin-right: 17px;
   padding: 24px 48px;
-  margin-top: 4.5px;
-  margin-left: 2px;
 
   &:hover {
     transition: 0.7s;
@@ -307,9 +177,8 @@
     background-color: #0052FF;
   }
 
-
   @media (max-width: 505px) {
-    margin-right: 0px;
+    margin-right: 0;
   }
 }
 
@@ -326,7 +195,6 @@
   line-height: 19px;
   letter-spacing: 0.4px;
   color: white;
-  margin-top: 5px;
 
   &:hover {
     transition: 0.7s;
@@ -342,7 +210,7 @@
 .hidden {
   display: none;
 
-  @media (max-width: 1420px) {
+  @media (max-width: 1120px) {
     display: block;
   }
 }

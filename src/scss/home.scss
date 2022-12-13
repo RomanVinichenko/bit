@@ -1,43 +1,34 @@
-.phones-main{
+.phones-main {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
 }
-.better-trading-small{
-  font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 140%;
-color: #5B616E;
-width: 576px;
-position: relative;
-top: 17px;
 
-@media (max-width:665px){
-  width: auto;
-  font-size: 18px;
+.better-trading-small {
+  position: relative;
+  font-family: "DM Sans-Medium", sans-serif;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #5B616E;
+  margin-bottom: 50px;
 }
 
-}
-.flex-main-wrapper{
+.flex-main-wrapper {
   display: flex;
-  margin-top: 50px;
 
-
-  input{
-    margin-right: 25px;
-  }
-
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     justify-content: center;
   }
 
-  @media (max-width:433px){
+  @media (max-width: 433px) {
     flex-direction: column;
     align-items: center;
 
-    input{
+    input {
       width: 90%;
-      margin-right: 0px;
+      margin-right: 0;
       margin-bottom: 15px;
     }
   }
@@ -51,95 +42,84 @@ top: 17px;
     background-repeat: no-repeat;
     position: relative;
 
-    .phone1-main{
-      top: -26px;
+    .phone1-main {
       position: relative;
-      width: 273px;
-      height: 562px;
-      margin-left: -9px;
+      max-width: 273px;
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: auto;
 
-      @media (max-width:1520px){
-        width: 38%;
-        height: 70%;
+      @media (max-width: 1520px) {
+        max-width: 243px;
       }
 
-      @media (max-width:1240px){
-        margin-left: 30px;
-      }
-
-      @media (max-width:903px){
-        margin-left: 74px;
-      }
-
-      @media (max-width:768px){
+      @media (max-width: 768px) {
         display: none;
       }
     }
-    .phone2-main{
-      margin-top: 49px;
+
+    .phone2-main {
+      margin-top: 75px;
       margin-left: 45px;
       z-index: 2;
+      max-width: 273px;
       position: relative;
-      width: 273px;
-      height: 562px;
 
-      @media (max-width:1520px){
-        width: 38%;
-        height: 70%;
+      @media (max-width: 1520px) {
+        max-width: 243px;
       }
-
-      @media (max-width:903px){
-        margin-left: 5px;
-      }
-      @media (max-width:768px){
+      @media (max-width: 768px) {
         display: none;
       }
     }
-    .main-cubic1{
+
+    .main-cubic1 {
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       top: -38px;
       right: 80px;
       left: -196px;
-      @media (max-width:768px){
+      @media (max-width: 768px) {
         display: none;
       }
-  
+
     }
-    .main-cubic2{
+
+    .main-cubic2 {
       position: absolute;
       bottom: 0px;
       top: -14px;
       z-index: 0;
       right: 80px;
       left: 91%;
-      @media (max-width: 1520px){
-        left: 72%; 
+      @media (max-width: 1520px) {
+        left: 72%;
       }
-      @media (max-width:768px){
+      @media (max-width: 768px) {
         display: none;
       }
     }
-    .main-cubic3{
+
+    .main-cubic3 {
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       top: 435px;
       z-index: 1;
       right: 74px;
       left: -21%;
 
-      @media (max-width:1400px){
+      @media (max-width: 1400px) {
         top: 290px;
       }
-      @media (max-width:1240px){
+      @media (max-width: 1240px) {
         left: -10%;
         top: 220px;
       }
 
-      @media (max-width:992px){
+      @media (max-width: 992px) {
         top: 200px;
       }
-      @media (max-width:768px){
+      @media (max-width: 768px) {
         display: none;
       }
     }
@@ -172,9 +152,10 @@ top: 17px;
   &-row {
     display: flex;
     align-items: center;
+    width: 100%;
     height: calc(100vh - 88px);
 
-    @media (max-width:1520px){
+    @media (max-width: 1520px) {
       justify-content: space-between;
     }
 
@@ -185,6 +166,7 @@ top: 17px;
 
   &-col {
     max-width: 50%;
+    width: 100%;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -197,13 +179,5 @@ top: 17px;
         max-width: unset;
       }
     }
-  }
-
-}
-.right-side{
-  margin-left: 216px;
-
-  @media (max-width:1520px){
-    margin-left: 0px;
   }
 }

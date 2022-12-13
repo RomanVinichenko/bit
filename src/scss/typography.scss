@@ -26,44 +26,29 @@
 }
 
 .make-your-grow {
-  font-weight: 300;
-  margin-top: 11px;
-  font-style: normal;
-  font-weight: 700;
+  z-index: 5;
+  font-family: "DM Sans-Bold", sans-serif;
   font-size: 56px;
-  margin-left: 1px;
-  line-height: 123%;
-  letter-spacing: 1px;
+  line-height: 1.3;
+  text-align: center;
   color: #0A0B0D;
-  font-family: DM Sans, sans-serif;
+  margin-bottom: 16px;
 }
 
 .trade-now-text {
-
-  margin-bottom: 0;
-  font-weight: 700;
+  max-width: 564px;
+  width: 100%;
+  font-family: "DM Sans-Medium", sans-serif;
   font-size: 64px;
-  line-height: 129%;
-  width: 564px;
-  margin-top: 37px;
-  margin-left: 0px;
-  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-bottom: 24px;
   color: #0A0B0D;
-
-  @media (max-width: 1240px) {
-    width: auto;
-    font-size: 50px;
-  }
 }
 
 .h1-heading {
   @media (max-width: 992px) {
     font-size: 30px;
   }
-}
-
-.align-center {
-  text-align: center;
 }
 
 .h2-heading {
@@ -73,9 +58,12 @@
 }
 
 .h3-heading {
+  font-weight: 700;
   font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 0.7px;
+  line-height: 1.3;
+  color: #0A0B0D;
+  font-family: "DM Sans-Bold", sans-serif;
+  margin-bottom: 8px;
 
   @media (max-width: 768px) {
     font-size: 20px;

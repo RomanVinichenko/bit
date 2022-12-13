@@ -10,6 +10,8 @@
   padding: 0 16px;
   margin-right: 16px;
   cursor: pointer;
+  text-align: center;
+  min-width: max-content;
 
   a {
     font-family: "DM Sans-Bold", sans-serif;
@@ -17,17 +19,15 @@
     line-height: 22px;
     letter-spacing: 0.01em;
     color: $blue;
+    @media (max-width: 1180px) {
+      font-size: 16px;
+    }
   }
-
-
-  @media (max-width: 1172px) {
-    width: 116px;
+  @media (max-width: 1300px) {
+    margin-right: 12px;
   }
-  @media (max-width: 992px) {
-    margin-left: -18px;
-    justify-content: flex-start;
-    width: 126px;
-    margin-top: 5px;
+  @media (max-width: 1180px) {
+    padding: 0 12px;
   }
 }
 
@@ -44,6 +44,8 @@
   transition: all 0.5s;
 
   .btn-primary-blue {
+    min-width: max-content;
+    text-align: center;
     font-family: "DM Sans-Bold", sans-serif;
     color: $white;
     font-weight: 700;
@@ -51,6 +53,9 @@
     line-height: 22px;
     letter-spacing: 0.01em;
     transition: all 0.5s;
+    @media (max-width: 1180px) {
+      font-size: 16px;
+    }
   }
 
   &:hover {
@@ -59,6 +64,9 @@
     .btn-primary-blue {
       color: $blue;
     }
+  }
+  @media (max-width: 1180px) {
+    padding: 0 12px;
   }
 }
 
@@ -142,7 +150,6 @@
 
 .header {
   padding: 20px 0;
-  width: 100%;
   transition: 0.7s;
   color: #000000;
   border-bottom: 1px solid #E4E4E4;
@@ -347,7 +354,8 @@
 
     &:hover {
       .website-settings-choice {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
 
         @media (max-width: 992px) {
           display: none;
@@ -394,11 +402,19 @@
 
   &-choice {
     background-color: #FFFFFF;
-    width: 440px;
-    padding: 25px 20px 0;
-    display: none;
+    z-index: 10;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     right: 0;
+    top: 50px;
+    border: 1px solid $black;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 30px;
+    transition: all 0.3s;
 
     * {
       font-size: 14px;
@@ -412,8 +428,6 @@
   }
 
   &-col {
-    width: 50%;
-
     @media (max-width: 992px) {
       position: relative;
       width: 100%;
@@ -426,14 +440,16 @@
     margin: 0;
 
     li {
-      margin: 25px 0;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
     }
   }
 
   &-heading {
     display: block;
     padding-bottom: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-bottom: 1px solid $black-color3;
 
     @media (max-width: 992px) {
@@ -473,9 +489,8 @@
 
 .website-currency {
   font-family: "DM Sans-Medium", sans-serif;
-  //font-size: 16px;
+  font-size: 16px;
   line-height: 21px;
-  font-size: 1;
   color: $grey-color2;
   margin-left: 3px;
 }
@@ -533,6 +548,15 @@
         @media (max-width: 1500px) {
           margin-left: 40px;
         }
+        @media (max-width: 1300px) {
+          margin-left: 25px;
+        }
+        @media (max-width: 1180px) {
+          margin-left: 18px;
+        }
+        @media (max-width: 1080px) {
+          margin-left: 14px;
+        }
       }
 
       @media (max-width: 992px) {
@@ -553,6 +577,9 @@
 
       &:hover {
         color: #0080FF;
+      }
+      @media (max-width: 1080px) {
+        font-size: 15px;
       }
     }
 

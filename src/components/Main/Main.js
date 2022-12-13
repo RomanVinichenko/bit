@@ -45,7 +45,7 @@ const Main = ({ emailValue, setEmailValue, emailValue2, setEmailValue2 }) => {
                   <div className="intro-row">
                      <div className="intro-col">
                         <h1 className="trade-now-text">{t('tradeNow')}</h1>
-                        <p className="better-trading-small text text-lightgrey">{t('betterTrading')}</p>
+                        <p className="better-trading-small text">{t('betterTrading')}</p>
                         <div className='flex-main-wrapper'>
                            <input value={emailValue} onChange={(e) => setEmailValue(e.target.value)} type={"email"} placeholder={t('enterEmailAddress')} className='email-input-main' />
                            <div className="btn-group">
@@ -70,7 +70,7 @@ const Main = ({ emailValue, setEmailValue, emailValue2, setEmailValue2 }) => {
             <section className='portfolio-section'>
                <div className='container-parent'>
                   <div className='make-your-portfolio'>
-                     <span className='h1-heading align-center make-your-grow'>{t('makeYourGrowToday')}</span>
+                     <span className='h1-heading make-your-grow'>{t('makeYourGrowToday')}</span>
                      <span className='make-your-portfolio-small-text'>{t('bityxHasPlentyFuture')}</span>
                   </div>
                   <div className='make-your-portfolio-flex'>
@@ -80,7 +80,7 @@ const Main = ({ emailValue, setEmailValue, emailValue2, setEmailValue2 }) => {
                               <Portfel />
                            </div>
                            <div className='portfolio-item-text'>
-                              <span className='h3-heading portolio-margin'>{t('manageYourPortfolio')}</span>
+                              <span className='h3-heading'>{t('manageYourPortfolio')}</span>
                               <span className='portfolio-item-small-text'>{t('buyAndVend')}</span>
                            </div>
                         </div>
@@ -89,7 +89,7 @@ const Main = ({ emailValue, setEmailValue, emailValue2, setEmailValue2 }) => {
                               <Reccuring />
                            </div>
                            <div className='portfolio-item-text'>
-                              <span className='h3-heading portolio-margin'>{t('recurringBuys')}</span>
+                              <span className='h3-heading'>{t('recurringBuys')}</span>
                               <span className='portfolio-item-small-text'>{t('investCryptoCurrencies')}</span>
                            </div>
                         </div>
@@ -98,7 +98,7 @@ const Main = ({ emailValue, setEmailValue, emailValue2, setEmailValue2 }) => {
                               <Vault />
                            </div>
                            <div className='portfolio-item-text'>
-                              <span className='h3-heading portolio-margin'>{t('vaultProtection')}</span>
+                              <span className='h3-heading'>{t('vaultProtection')}</span>
                               <span className='portfolio-item-small-text'>{t('addedSecurity')}</span>
                            </div>
                         </div>
@@ -107,7 +107,7 @@ const Main = ({ emailValue, setEmailValue, emailValue2, setEmailValue2 }) => {
                               <Mobile />
                            </div>
                            <div className='portfolio-item-text'>
-                              <span className='h3-heading portolio-margin'>{t('mobileApps')}</span>
+                              <span className='h3-heading'>{t('mobileApps')}</span>
                               <span className='portfolio-item-small-text'>{t('stayOnTop')}</span>
                            </div>
                         </div>

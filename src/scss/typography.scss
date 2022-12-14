@@ -5,12 +5,6 @@
 
 @import "variables";
 
-.h1-heading,
-.h2-heading {
-  font-size: 48px;
-  font-weight: 600;
-}
-
 .trade-like-pro-main-flex-h1-heading {
   position: relative;
   display: block;
@@ -46,18 +40,6 @@
   color: #0A0B0D;
 }
 
-.h1-heading {
-  @media (max-width: 992px) {
-    font-size: 30px;
-  }
-}
-
-.h2-heading {
-  @media (max-width: 992px) {
-    font-size: 24px;
-  }
-}
-
 .h3-heading {
   font-weight: 700;
   font-size: 32px;
@@ -85,7 +67,6 @@
 .text {
   &-big {
     font-size: 24px;
-    margin-top: 19px;
 
     @media (max-width: 992px) {
       font-size: 16px;
@@ -93,13 +74,6 @@
   }
 
   &-lightgrey {
-    margin-top: 19px;
-    margin-top: 9px;
-    margin-left: 3px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.25px;
-    /* line-height: 140%; */
     color: #5B616E;
   }
 
@@ -109,14 +83,16 @@
 }
 
 .btn {
-  display: inline-block;
-  padding: 26px 40px;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  min-width: 191px;
-  text-decoration: none;
-  text-align: center;
+  font-family: "DM Sans-Bold", sans-serif;
+  height: 72px;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
   cursor: pointer;
   transition: .7s;
 
@@ -140,18 +116,14 @@
   }
 
   &-white-fill {
-    background-color: white;
-    border: 1px solid white;
-    align-self: center;
-    color: $blue-color;
-    top: -2px;
-    height: 71px;
+    margin-left: 25px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #0052FF;
 
     &:hover {
-      transition: .7s;
-      background-color: $blue-color;
-      color: white;
-      border: 1px solid #0052FF;
+      background-color: #0052FF;
+      color: #fff;
     }
   }
 

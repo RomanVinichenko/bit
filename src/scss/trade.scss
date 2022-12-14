@@ -92,9 +92,18 @@
 
 .trade-like-pro-right {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
-
+  @media (max-width: 1600px) {
+    max-width: 800px;
+  }
+  @media (max-width: 1450px) {
+    max-width: 720px;
+  }
+  @media (max-width: 1400px) {
+    opacity: 0.2;
+  }
   @media (max-width: 1120px) {
     order: 0;
     justify-content: center;
@@ -104,6 +113,7 @@
     justify-content: flex-end;
   }
 }
+
 .trade-like-pro-item-big-text-1,
 .trade-like-pro-item-big-text-2,
 .trade-like-pro-item-big-text-3 {
@@ -145,10 +155,7 @@
 
 .more-pro-traders-flex {
   display: flex;
-
-  a {
-    text-decoration: none !important;
-  }
+  margin-top: 56px;
 
   @media (max-width: 505px) {
     flex-direction: column;
@@ -159,20 +166,27 @@
   }
 }
 
+.mor-pro-traders-item-blue-bg,
 .more-pro-traders-item-blue-border {
-  transition: 0.7s;
-  border: 1px solid #0052FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans-Bold", sans-serif;
   border-radius: 4px;
-  font-style: normal;
-  font-weight: 700;
+  transition: 0.7s;
+  height: 72px;
   font-size: 17px;
   line-height: 22px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.01em;
+  padding: 0 48px;
+
+}
+
+.more-pro-traders-item-blue-border {
+  border: 1px solid #0052FF;
   color: #0052FF;
-  padding: 24px 48px;
 
   &:hover {
-    transition: 0.7s;
     color: white;
     background-color: #0052FF;
   }
@@ -183,21 +197,12 @@
 }
 
 .mor-pro-traders-item-blue-bg {
-  transition: 0.7s;
   background-color: #0052FF;
+  color: #fff;
   border: 1px solid #0052FF;
-  border-radius: 4px;
-  white-space: nowrap;
-  padding: 25px 48px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 19px;
-  letter-spacing: 0.4px;
-  color: white;
+  margin-left: 16px;
 
   &:hover {
-    transition: 0.7s;
     color: #0052FF;
     background-color: white;
   }

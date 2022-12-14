@@ -76,25 +76,18 @@
     .main-cubic1 {
       position: absolute;
       bottom: 0;
-      top: -38px;
-      right: 80px;
-      left: -196px;
+      top: 6%;
+      left: -6%;
       @media (max-width: 768px) {
         display: none;
       }
-
     }
 
     .main-cubic2 {
       position: absolute;
-      bottom: 0px;
-      top: -14px;
       z-index: 0;
-      right: 80px;
-      left: 91%;
-      @media (max-width: 1520px) {
-        left: 72%;
-      }
+      right: -3%;
+      top: 0;
       @media (max-width: 768px) {
         display: none;
       }
@@ -103,22 +96,8 @@
     .main-cubic3 {
       position: absolute;
       bottom: 0;
-      top: 435px;
       z-index: 1;
-      right: 74px;
-      left: -21%;
-
-      @media (max-width: 1400px) {
-        top: 290px;
-      }
-      @media (max-width: 1240px) {
-        left: -10%;
-        top: 220px;
-      }
-
-      @media (max-width: 992px) {
-        top: 200px;
-      }
+      left: -6%;
       @media (max-width: 768px) {
         display: none;
       }

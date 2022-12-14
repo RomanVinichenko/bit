@@ -1,28 +1,36 @@
 @import 'variables';
 
 .sign-in-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #0052FF;
-  border-radius: 4px;
-  height: 36px;
-  padding: 0 16px;
   margin-right: 16px;
-  cursor: pointer;
-  text-align: center;
-  min-width: max-content;
 
   a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: max-content;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #0052FF;
+    background-color: #fff;
+    height: 36px;
+    padding: 0 16px;
     font-family: "DM Sans-Bold", sans-serif;
     font-size: 17px;
     line-height: 22px;
     letter-spacing: 0.01em;
     color: $blue;
+    transition: all 0.7s;
+
+    &:hover {
+      color: #fff;
+      background-color: #0052FF;
+    }
+
     @media (max-width: 1180px) {
       font-size: 16px;
     }
   }
+
   @media (max-width: 1300px) {
     margin-right: 12px;
   }
@@ -32,17 +40,6 @@
 }
 
 .nav-list-item-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  padding: 0 16px;
-  background: linear-gradient(0deg, #0052FF, #0052FF), linear-gradient(135.67deg, #047FFE 0%, #00007F 99%);
-  border-radius: 4px;
-  border: 1px solid $blue;
-  cursor: pointer;
-  transition: all 0.5s;
-
   .btn-primary-blue {
     min-width: max-content;
     text-align: center;
@@ -52,19 +49,27 @@
     font-size: 17px;
     line-height: 22px;
     letter-spacing: 0.01em;
-    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 0 16px;
+    background-color: #0052FF;
+    border-radius: 4px;
+    border: 1px solid $blue;
+    cursor: pointer;
+    transition: all 0.7s;
+
+    &:hover {
+      background: $white;
+      color: $blue;
+    }
+
     @media (max-width: 1180px) {
       font-size: 16px;
     }
   }
 
-  &:hover {
-    background: $white;
-
-    .btn-primary-blue {
-      color: $blue;
-    }
-  }
   @media (max-width: 1180px) {
     padding: 0 12px;
   }
@@ -578,6 +583,7 @@
       &:hover {
         color: #0080FF;
       }
+
       @media (max-width: 1080px) {
         font-size: 15px;
       }

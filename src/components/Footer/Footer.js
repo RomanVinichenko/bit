@@ -100,15 +100,15 @@ const Footer = () => {
                         <h6 className=" footer-link-h6-heading">Community</h6>
                         <div className="footer-link-5-item">
                             <span>
-                                {t('supportService')}
+                                {t('supportService')} :
                                 <a href="mailto:support@bityx.com">support@bityx.com</a>
                             </span>
                             <span>
-                                {t('tokenListings')}
+                                {t('tokenListings')} :
                                 <a href="mailto:listing@bityx.com">listing@bityx.com</a>
                             </span>
                             <span>
-                                {t('businessOffers')} 
+                                {t('businessOffers')} :
                                 <a href="mailto:business@bityx.com"> business@bityx.com</a>
                             </span>
                         </div>
@@ -116,7 +116,7 @@ const Footer = () => {
                         <div className="footer-link footer-link-volume ">
                                 <span>107,354,400.29 USDT 107,383,385.98 USD</span>
                                 <span>
-                                    {t('tokenListings')}
+                                    {t('tokenListings')} :
                                     <a href="mailto:listing@bityx.com">listing@bityx.com</a>
                                 </span>
                                 <span>2022-09-15 04:54:51 (GMT+0) 30.7ms</span>

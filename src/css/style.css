@@ -387,7 +387,6 @@ body{
 	margin-bottom: 15px;
 	color: #fff;
 	display: block;
-	font-family: 'Figtree', sans-serif;
 }
 .contact-right label>span>span{
 	color: #9EA7B7;
@@ -395,7 +394,6 @@ body{
 .contact-right input{
 	border:  1px solid #2D3138;
 	background-color:  #151724;
-	font-weight: 400;
 	font-size: 14px;
 	color:  #fff;
 	box-sizing: border-box;
@@ -403,7 +401,6 @@ body{
 	line-height: 37px;
 	border-radius: 4px;
 	padding-left: 15px;
-	font-family: 'Figtree', sans-serif;
 }
 .contact-right input::placeholder{
 	color:  #9EA7B7;
@@ -411,7 +408,6 @@ body{
 .file-label{
 	border:  1px solid #2D3138;
 	background-color:  #151724;
-	font-weight: 400;
 	color:  #9EA7B7;
 	box-sizing: border-box;
 	height: 37px;
@@ -420,7 +416,6 @@ body{
 	padding-left: 15px;
 	display: inline-block;
 	margin-top: 33px;
-	padding-left: 46px;
 	position: relative;
 }
 label.file-label{
@@ -452,7 +447,6 @@ label.file-label{
 	padding-left: 0;
 }
 .file-label p{
-	font-weight: 400;
 	color: #9EA7B7;
 	font-size: 12px;
 	line-height: 14px;
@@ -461,8 +455,7 @@ label.file-label{
 	position: absolute;
 	bottom: -52px;
 	left: 0;
-	letter-spacing:  0px;
-	font-family: 'Figtree', sans-serif;
+	letter-spacing: 0;
 }
 .file-label::after{
 	content: '';
@@ -508,11 +501,9 @@ footer h5{
 	margin-bottom: 15px;
 }
 footer p{
-	font-weight: 400;
 	font-size: 14px;
 	line-height: 17px;
 	color: #ACADAF;
-	margin-bottom: 10px;
 	margin-top: 0;
 }
 footer p>a{
@@ -523,7 +514,6 @@ footer ul>li>a{
 	text-decoration: none;
 	color: #ACADAF;
 	font-size: 14px;
-	font-weight: 400;
 	line-height: 17px;
 	margin-bottom: 10px;
 	display: block;
@@ -546,11 +536,9 @@ footer ul>li>a{
 	padding-right: 17px;
 	position: relative;
 	color: #000 !important;
-	font-weight: 400;
 	font-size: 10px;
 	width: auto;
 	border-radius: 4px;
-	position: relative;
 }
 #clear-file-input{
 	position: absolute;
@@ -604,10 +592,8 @@ footer ul>li>a{
 }
 .footer-bottom{
 	text-align: center;
-	font-family: 'Figtree', sans-serif;
 	margin-top: 25px;
 	padding-bottom: 40px;
-	font-weight: 400;
 	font-size: 10px;
 	line-height: 12px;
 	color: #ACADAF;
@@ -911,8 +897,7 @@ footer ul>li>a{
 		padding: 0;
 	}
 	.contact-right{
-		margin: 0 auto;
-		margin-top: 56px;
+		margin: 56 auto 0;
 		display: block;
 	}
 	.file-label p{
@@ -1055,7 +1040,6 @@ footer ul>li>a{
 		width: 100%;
 	}
 	.contact-right .input-submit{
-		margin-left: 0;
 		margin-top: 80px;
 		margin-left: 20px;
 	}

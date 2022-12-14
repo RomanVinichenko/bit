@@ -1,20 +1,21 @@
 @import "variables";
 
 .form-input {
+  background-color: rgba(255, 255, 255, 0.26);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
-  padding: 23px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  height: 72px;
+  padding: 0 24px;
   outline: none;
   min-width: 350px;
-  background: rgba(255, 255, 255, 0.26);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  margin-left: 4px;
-  height: 72px;
-  margin-top: -1px;
-  color: rgba(255, 255, 255, 0.5);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .form-input::placeholder {
@@ -31,7 +32,7 @@
   font-size: 18px;
   line-height: 23px;
   outline: none;
-  width: 350px;
+  min-width: 350px;
 
   &::placeholder {
     color: #879DC5;
@@ -47,7 +48,8 @@
   justify-content: center;
   height: 72px;
   transition: 0.7s;
-  background-image: linear-gradient(0deg, #0052FF, #0052FF), linear-gradient(135.67deg, #047FFE 0%, #00007F 99%);
+  background-color: #0052FF;
+  border: 1px solid #0052FF;
   border-radius: 4px;
   font-family: "DM Sans-Bold", sans-serif;
   font-size: 17px;
@@ -57,9 +59,8 @@
   padding: 0 48px;
 
   &:hover {
-    transition: 0.7s;
     background-color: white;
-    color: #0052FF !important;
+    color: #0052FF;
   }
 }
 

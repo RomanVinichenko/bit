@@ -5,8 +5,8 @@ const Container = styled.div`
   background-color: white;
   height: 100%;
   min-height: 100vh;
-  position:relative;
-  padding-bottom: 50px;
+  position: relative;
+  overflow: hidden;
 
   .fields {
     display: grid;
@@ -23,34 +23,19 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 60px 20px 190px 20px;
+  position: relative;
+  width: 100%;
+  height: fit-content;
   display: grid;
-  grid-template-columns: repeat(2, minmax(50%, auto));
-  gap: 22px;
-  max-width: 1480px;
-  margin: 62px auto auto;
-  padding-bottom: 80px;
-
-  @media (max-height: 768px) {
-    margin-top: 30px;
-  }
-
-  @media (max-height: 700px) {
-    margin-top: 20px;
-  }
-
-  @media (max-width: 1600px) {
-    padding: 0 40px 80px;
-  }
+  grid-template-columns: 1fr 1fr;
 
   @media (max-width: 960px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
-  }
-
-  @media (max-width: 560px) {
-    padding: 0 20px 50px;
   }
 `
 
@@ -60,8 +45,8 @@ const FormWrapper = styled.div`
   -ms-flex-line-pack: start;
   align-content: start;
   gap: 50px;
-  width:100%;
-  min-width: 335px;
+  width: 100%;
+  margin-left: auto;
   max-width: 722px;
   z-index: 1;
   border-radius: 12px;
@@ -105,9 +90,10 @@ const FormWrapper = styled.div`
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    a{
+
+    a {
       color: black;
-      text-decoration:none !important;
+      text-decoration: none !important;
     }
   }
 
@@ -125,7 +111,7 @@ const FormWrapper = styled.div`
     font-size: 12px;
     line-height: 14px;
     color: #55617;
-    text-decoration:none !important;
+    text-decoration: none !important;
 
     @media (min-width: 769px) {
       margin-top: -25px;
@@ -134,36 +120,21 @@ const FormWrapper = styled.div`
 `
 
 const GreetingBox = styled.div`
-  display: grid;
-  align-content: start;
-  gap: 25px;
-  width: 100%;
-  max-width: 722px;
-  padding-top: 145px;
-  margin-bottom: 50px;
-
-  @media (max-width:380px){
-  }
-
-  @media (max-width: 960px) {
-    padding-top: 0;
-    gap: 15px;
-  }
-
-  @media (max-height: 768px) {
-    padding-top: 120px;
-  }
-
-  @media (max-width: 960px) and (max-height: 768px) {
-    padding-top: 0;
-    gap: 15px;
-  }
+  margin-right: 35px;
+  padding-top: 129px;
 
   .title {
+    max-width: 663px;
+    width: 100%;
+    font-family: "DM Sans-Medium", sans-serif;
+    margin-bottom: 24px;
+    font-size: 64px;
+    line-height: 1.3;
     color: #0A0B0D;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 58px;
+
+    @media (max-width: 1480px) {
+      font-size: 46px;
+    }
 
     @media (max-width: 1280px) {
       font-size: 38px;
@@ -181,10 +152,12 @@ const GreetingBox = styled.div`
   }
 
   .description {
-    color: var(--color-secondary);
-    font-weight: 400;
+    max-width: 564px;
+    width: 100%;
+    font-family: "DM Sans-Medium", sans-serif;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 1.4;
+    color: #5B616E;
 
     @media (max-width: 1024px) {
       font-size: 16px;
@@ -197,4 +170,4 @@ const GreetingBox = styled.div`
   }
 `
 
-export { Container, Content, GreetingBox, FormWrapper }
+export {Container, Content, GreetingBox, FormWrapper}

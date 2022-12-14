@@ -16,15 +16,15 @@ function CurrencyPairs() {
       new Swiper('.intro-swiper', {
          // Optional parameters
          autoplay: {
-            delay: 5000,
+            delay: 4500,
          },
          breakpoints: {
             1000:{
                slidesPerView: 4,
-               spaceBetween:35,
+               spaceBetween: 32,
             },
             820:{
-               slidesPerView:3,
+               slidesPerView: 3,
                spaceBetween: 5,
             },
             350: {
@@ -43,7 +43,7 @@ function CurrencyPairs() {
 
    return (
       <section className="table-section">
-         <div className="table-container-wrapper">
+         <div className="container-parent">
             <div className="table-wrapper">
                <div className="table-above-text">
                   <a href="#" className="hot-link">

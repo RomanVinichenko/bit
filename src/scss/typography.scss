@@ -151,13 +151,12 @@
 .profit-badge {
   font-size: 12px;
   padding: 5px 10px;
-  background-color: $green-dark-color;
-  color: $green-bright-color;
-  font-weight: 500;
-  border-radius: 4px;
+  background-color: transparent;
+  color: #06BC5A;
+  line-height: 16px;
 
   &.decrease {
-    background-color: $red-dark-color;
-    color: $red-bright-color;
+    background-color: transparent;
+    color: #FF1800;
   }
 }

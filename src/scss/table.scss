@@ -1,16 +1,5 @@
 @import 'variables';
 
-.table-container-wrapper {
-  width: 1460px;
-  max-width: 1460px;
-  margin: 0 auto;
-
-  @media (max-width: 1460px) {
-    width: 90%;
-    max-width: 90%;
-  }
-}
-
 .table {
   width: 100%;
 
@@ -26,12 +15,13 @@
   }
 
   &-heading {
+    font-family: "DM Sans-Bold", sans-serif;
     font-size: 14px;
+    line-height: 18px;
+    color: #556176;
     border-top: none !important;
-    color: $dark-blue-color;
-    font-weight: 400;
     text-align: left;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 
     &:nth-of-type(3),
     &:nth-of-type(4),
@@ -52,7 +42,6 @@
     font-size: 14px;
     height: 50px;
     border-top: none !important;
-    padding-bottom: 26px;
     color: $grey-color1;
 
     .text-darkblue {
@@ -85,12 +74,12 @@
   }
 
   &-container {
-    border-radius: 12px;
-    padding: 44px 24px;
-    background-color: $white;
+    background: #FFFFFF;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
     margin-top: 72px;
     width: 100%;
-    box-shadow: 0 20px 50px rgb(0 0 0 / 10%);
 
     @media (max-width: 992px) {
       overflow: auto;
@@ -99,13 +88,11 @@
   }
 
   &-above-text {
+    justify-content: flex-end;
+    padding: 8px 0;
+    margin-bottom: 25px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px;
-    /* margin-top: -43px; */
-    top: 2px;
-    margin-left: 51px;
     position: relative;
 
     @media (max-width: 1460px) {
@@ -114,12 +101,8 @@
       overflow: auto;
     }
 
-    @media (max-width: 1280px) {
-      justify-content: flex-start;
-      overflow: auto;
-    }
     @media (max-width: 992px) {
-      margin-left: 0px;
+
     }
 
     img {
@@ -127,9 +110,9 @@
     }
 
     a {
-      text-decoration: none;
-      white-space: nowrap;
-      padding: 6px 0;
+      font-size: 16px;
+      line-height: 21px;
+      color: #000000;
       display: flex;
       align-items: center;
 
@@ -138,14 +121,13 @@
       }
 
       @media (max-width: 1280px) {
-        white-space: nowrap;
         font-size: 12px;
       }
 
       + a {
         padding-left: 25px;
         margin-left: 25px;
-        border-left: 1px solid $dark-blue-color;
+        border-left: 1px solid #D2D6DE;
 
         @media (max-width: 1280px) {
           padding-left: 10px;
@@ -161,10 +143,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-right: 16px;
-        width: 15px;
-        height: 19px;
-        display: inline-block;
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
 
         @media (max-width: 992px) {
           margin-right: 9px;
@@ -173,6 +154,12 @@
     }
 
     .more-link {
+      font-size: 16px;
+      line-height: 21px;
+      color: #0052FF;
+      @media (max-width: 1280px) {
+        font-size: 12px;
+      }
 
       &:after {
         content: '';
@@ -180,10 +167,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-left: 19px;
-        width: 7px;
-        height: 12px;
-        display: inline-block;
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
       }
     }
   }
@@ -191,7 +177,7 @@
 
 .tabs-nav {
   margin-bottom: 40px;
-  border-bottom: 1px solid #556176;
+  border-bottom: 1px solid #9AA8C1;
 }
 
 .b-tab {
@@ -203,13 +189,13 @@
 }
 
 .b-nav-tab {
-  transition: .7s;
-  display: inline-block;
-  padding: 0 25px 15px;
-  text-decoration: none;
+  font-family: "DM Sans-Bold", sans-serif;
   font-size: 18px;
-  font-weight: 500;
-  color: $grey-color1;
+  line-height: 23px;
+  color: #BEBEBE;
+  transition: .7s;
+  padding: 5px 27px 12px;
+  text-decoration: none;
   position: relative;
 
   &:hover {
@@ -238,7 +224,6 @@
 .intro {
   &-swiper {
     width: 100%;
-    top: 18px;
 
     @media (min-width: 350px) {
       width: 100%;
@@ -255,13 +240,10 @@
     }
 
     &-slide {
-      width: 357px !important;
-      margin-right: 29px !important;
+      border-radius: 4px;
 
       img {
-        width: 346px;
-        height: 204px;
-        border-radius: 9px;
+        border-radius: 4px;
 
         @media (max-width: 1535px) {
           width: auto;

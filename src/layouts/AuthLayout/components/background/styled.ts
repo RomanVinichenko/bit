@@ -29,19 +29,6 @@ const Container = styled.div`
     top: 739px;
     right: 42%;
     position: absolute;
-    @media (max-width: 960px) {
-      position: absolute;
-      bottom: 0;
-      top: 678px;
-      z-index: 0;
-      right: 80px;
-      left: -18.5%;
-    }
-    @media (max-width: 700px) {
-      left: -32.5%;
-    }
   }
-
 `
-
 export {Container}

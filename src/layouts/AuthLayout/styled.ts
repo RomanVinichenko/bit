@@ -69,8 +69,7 @@ const FormWrapper = styled.div`
     gap: 35px;
     padding: 30px;
   }
-
-
+  
   .form-title {
     font-size: 32px;
     font-weight: 600;
@@ -102,8 +101,6 @@ const FormWrapper = styled.div`
       margin-left: 25px;
       color: var(--color-active);
     }
-
-
   }
 
   .footer-button--small {
@@ -129,6 +126,7 @@ const GreetingBox = styled.div`
     font-family: "DM Sans-Medium", sans-serif;
     margin-bottom: 24px;
     font-size: 64px;
+    font-weight: 500;
     line-height: 1.3;
     color: #0A0B0D;
 
@@ -156,6 +154,7 @@ const GreetingBox = styled.div`
     width: 100%;
     font-family: "DM Sans-Medium", sans-serif;
     font-size: 24px;
+    font-weight: 500;
     line-height: 1.4;
     color: #5B616E;
 

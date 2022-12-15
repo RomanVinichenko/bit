@@ -30,7 +30,6 @@ const backendOptions = {
  },
 };
 
-
 export default i18next
    .use(initReactI18next)
    .use(LanguageDetector)

@@ -28,7 +28,6 @@ function UserDropdown({ auth }) {
       }
    }, []);
 
-
    return (
       <>
          {auth &&

@@ -18,19 +18,28 @@ function CurrencyPairs() {
          autoplay: {
             delay: 4500,
          },
+
          breakpoints: {
-            1000:{
+            1200:{
                slidesPerView: 4,
                spaceBetween: 32,
             },
+            1000:{
+               slidesPerView: 4,
+               spaceBetween: 26,
+            },
             820:{
                slidesPerView: 3,
-               spaceBetween: 5,
+               spaceBetween: 18,
             },
-            350: {
+            560:{
+               slidesPerView: 2,
+               spaceBetween: 18,
+            },
+            100: {
                slidesPerView: 1,
-               spaceBetween: 5,
-            },
+               spaceBetween: 18,
+            }
          },
 
          // Navigation arrows

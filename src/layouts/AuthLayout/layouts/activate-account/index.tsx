@@ -43,7 +43,6 @@ const ActivateAccount: FC<Props> = ({ state }) => {
     }
   }
 
-
   const onCodeSubmit = () => {
     setValidation(true)
     if(code.length != 6){

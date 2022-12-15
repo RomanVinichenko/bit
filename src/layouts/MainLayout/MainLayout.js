@@ -21,7 +21,6 @@ import axios from "axios"
 import api from "api"
 import { TokenProvider } from "../../layouts/AuthLayout/utils/token"
 
-
 const MainLayout = () => {
     const params = useParams('/:lang')
     const [paramsState, setParamsState] = useState(params.lang ? params.lang : '/en')

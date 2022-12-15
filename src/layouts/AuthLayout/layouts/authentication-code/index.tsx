@@ -7,7 +7,6 @@ import { TokenProvider } from '../../utils/token'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-
 interface Props {
   state?: any,
   setState?: any,

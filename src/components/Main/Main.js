@@ -29,7 +29,6 @@ import CurrencyPairs from '../СurrencyPairsModul/CurrencyPairs/CurrencyPairs';
 import {useTranslation} from 'react-i18next';
 import {NavLink, useParams} from 'react-router-dom';
 
-
 const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
   const {t, i18n} = useTranslation()
   const {lang} = useParams(':lang')

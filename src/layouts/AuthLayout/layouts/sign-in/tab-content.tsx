@@ -9,7 +9,6 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { TokenProvider } from '../../utils/token'
 import { useTranslation } from 'react-i18next'
 
-
 interface Props {
   tab: SignInTabs,
   state?: any,

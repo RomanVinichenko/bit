@@ -9,12 +9,9 @@ import { useTranslation } from 'react-i18next';
 import { capitalizeFirstLetter, rootDomain } from '../../utils/usableFunctions'
 import { NavLink, useParams } from 'react-router-dom'
 
-
-
 const Footer = () => {
     const { t, i18n } = useTranslation()
     const { lang } = useParams(":lang")
-
 
     return (
         <footer className="footer">

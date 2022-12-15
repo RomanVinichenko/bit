@@ -4,7 +4,6 @@ import UserDropdown from '../UserDropdown/UserDropdown';
 import UserOptions from '../UserOptions/UserOptions';
 import api from '../../../api';
 
-
 function HeadreUserActions({auth}) {
 
    return (

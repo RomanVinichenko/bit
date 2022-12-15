@@ -4,6 +4,7 @@
   margin-right: 16px;
 
   a {
+    font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,8 +133,6 @@
     text-decoration: none;
 
   }
-
-
 }
 
 .logo {
@@ -163,7 +162,6 @@
   button {
     transition: 0.7s;
   }
-
 
   .container-parent {
     @media (max-width: 992px) {
@@ -304,7 +302,6 @@
           .account-settings-dropdown {
             display: flex;
             align-items: center;
-
 
             &.is-open {
               &:after {
@@ -484,6 +481,7 @@
 .website-language {
   font-family: "DM Sans-Medium", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 21px;
   margin-right: 3px;
 
@@ -493,6 +491,7 @@
 }
 
 .website-currency {
+  font-weight: 500;
   font-family: "DM Sans-Medium", sans-serif;
   font-size: 16px;
   line-height: 21px;
@@ -503,6 +502,7 @@
 .website-slash {
   font-family: "DM Sans-Medium", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   line-height: 21px;
   color: #ACADAF;
 }
@@ -574,8 +574,8 @@
     }
 
     a {
-      font-size: 16px;
       font-weight: 400;
+      font-size: 16px;
       text-decoration: none;
       color: black;
       white-space: nowrap;

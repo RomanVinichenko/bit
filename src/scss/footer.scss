@@ -9,6 +9,7 @@
   .h6-heading {
     line-height: 21px;
     font-family: "DM Sans-Bold", sans-serif;
+    font-weight: 700;
   }
 
   &-row {
@@ -34,6 +35,7 @@
     a,
     span,
     button {
+      font-weight: 400;
       color: $lightgrey-color;
       font-size: 16px;
       line-height: 21px;
@@ -72,7 +74,6 @@
       }
     }
   }
-
 }
 
 .mobile-logo-footer {
@@ -89,6 +90,7 @@
     display: none;
   }
 }
+
 .footer-col-1,
 .footer-col-2,
 .footer-col-3,
@@ -103,6 +105,7 @@
     margin-right: 0;
   }
 }
+
 .footer-col-5 {
   @media (max-width: 999px) {
     margin-bottom: 24px;
@@ -117,7 +120,6 @@
   flex-direction: row;
   gap: 15px;
 }
-
 
 .logo-text {
   color: white;
@@ -172,6 +174,7 @@
   margin: 35px 0 15px 0;
   font-size: 16px;
   line-height: 21px;
+  font-weight: 700;
   color: #fff;
   font-family: "DM Sans-Bold", sans-serif;
   @media (max-width: 780px) {
@@ -197,6 +200,7 @@
 
 .footer-link-5-item span {
   color: #ACADAF;
+  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   display: flex;
@@ -208,13 +212,17 @@
   }
 }
 
-
 .footer-link-5-item {
+  font-weight: 400;
+
   span {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+
     a {
+      font-weight: 400;
+
       color: #ACADAF;
       margin-left: 7px;
     }
@@ -225,6 +233,7 @@
   padding: 25px 0;
   display: flex;
   justify-content: center;
+  font-weight: 400;
 }
 
 .footer-link-h6-heading_volume {
@@ -232,6 +241,7 @@
   font-size: 16px;
   line-height: 21px;
   color: $white;
+  font-weight: 700;
   font-family: "DM Sans-Bold", sans-serif;
   @media (max-width: 780px) {
     margin: 25px 0 10px 0;
@@ -240,11 +250,14 @@
 
 .footer-link-volume {
   color: #ACADAF;
+
   span {
     display: flex;
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+
     a {
       color: #ACADAF;
       margin-left: 7px;

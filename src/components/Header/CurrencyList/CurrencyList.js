@@ -15,7 +15,6 @@ function CurrencyList() {
 
    const { options, setOptions } = useContext(OptionsContext);
 
-
    useEffect(() => {
       const curCurrency = JSON.parse(localStorage.getItem('currency')) || { currency: 'USD', currencySign: '$' };
       setOptions({ ...options, currency: curCurrency.currency, currencySign: curCurrency.currencySign });

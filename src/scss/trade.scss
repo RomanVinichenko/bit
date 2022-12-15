@@ -4,7 +4,18 @@
   margin-bottom: 160px;
   position: relative;
 
-  @media (max-width: 992px) {
+  @media (max-width: 1300px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 999px) {
+    padding: 50px 0;
+    margin-bottom: 80px;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 70px;
+  }
+  @media (max-width: 700px) {
     margin-bottom: 50px;
   }
 }
@@ -13,12 +24,8 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 865px) {
     flex-direction: column;
-
-    div {
-      margin-bottom: 10px;
-    }
   }
 }
 
@@ -26,6 +33,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  &:not(:last-child) {
+    @media (max-width: 865px) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .trade-item-big-text {
@@ -46,7 +58,7 @@
 
 .trade-like-pro-flex {
   position: relative;
-  z-index: 5;
+  z-index: 2;
 }
 
 .trade-like-pro-text {
@@ -60,9 +72,14 @@
 .trade-like-pro-section {
   margin-bottom: 160px;
 
-  @media (max-width: 992px) {
+  @media (max-width: 1300px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 70px;
+  }
+  @media (max-width: 700px) {
     margin-bottom: 50px;
-    margin-top: 133px;
   }
 }
 
@@ -70,24 +87,21 @@
   display: flex;
   margin-bottom: 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1400px) {
+    margin-bottom: 56px;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+  }
+  @media (max-width: 900px) {
+    margin-top: 50px;
   }
 }
 
 .trade-like-pro-main-flex {
   position: relative;
-  @media (max-width: 1100px) {
+  @media (max-width: 900px) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
   }
-}
-
-.trade-like-pro-left {
-  z-index: 5;
 }
 
 .trade-like-pro-right {
@@ -95,22 +109,30 @@
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  z-index: 1;
+  img {
+    z-index: -1;
+
+  }
   @media (max-width: 1600px) {
     max-width: 800px;
   }
   @media (max-width: 1450px) {
     max-width: 720px;
   }
-  @media (max-width: 1400px) {
-    opacity: 0.2;
+  @media (max-width: 1150px) {
+    max-width: 670px;
   }
-  @media (max-width: 1120px) {
-    order: 0;
-    justify-content: center;
-    margin-top: 41px;
+  @media (max-width: 999px) {
+    max-width: 500px;
   }
-  @media (max-width: 768px) {
-    justify-content: flex-end;
+  @media (max-width: 900px) {
+    position: relative;
+    top: 0;
+    order: 2;
+    transform: none;
+    margin: 0 auto;
+    max-width: 600px;
   }
 }
 
@@ -123,7 +145,14 @@
   font-family: "DM Sans-Bold", sans-serif;
   margin-bottom: 8px;
   display: block;
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
+    font-size: 26px;
+  }
+  @media (max-width: 900px) {
+    font-size: 22px;
+    text-align: center;
+  }
+  @media (max-width: 650px) {
     font-size: 20px;
   }
 }
@@ -136,17 +165,34 @@
   padding-right: 37px;
   display: block;
   color: #5B616E;
+  @media (max-width: 900px) {
+    text-align: center;
+    padding-right: 0;
+  }
 }
 
 .trade-like-pro-item {
   max-width: 386px;
   width: 100%;
+  @media (max-width: 900px) {
+    max-width: 100%;
+  }
 }
 
 .trade-like-pro-item-absoulte {
   max-width: 386px;
   width: 100%;
   margin-left: 118px;
+  @media (max-width: 1500px) {
+    margin-left: 60px;
+  }
+  @media (max-width: 1400px) {
+    margin-left: 0;
+    margin-top: 56px;
+  }
+  @media (max-width: 900px) {
+    max-width: 100%;
+  }
 }
 
 .more-pro-traders {
@@ -157,18 +203,19 @@
   display: flex;
   margin-top: 56px;
 
-  @media (max-width: 505px) {
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+  @media (max-width: 650px) {
     flex-direction: column;
-
-    div {
-      margin-bottom: 16px;
-    }
+    align-items: center;
   }
 }
 
 .mor-pro-traders-item-blue-bg,
 .more-pro-traders-item-blue-border {
   display: flex;
+  width: fit-content;
   align-items: center;
   justify-content: center;
   font-family: "DM Sans-Bold", sans-serif;
@@ -190,9 +237,18 @@
     color: white;
     background-color: #0052FF;
   }
-
-  @media (max-width: 505px) {
-    margin-right: 0;
+}
+.more-pro-traders-flex {
+  a {
+    @media (max-width: 650px) {
+      width: 267px;
+      div {
+        width: 267px;
+      }
+      + a {
+        margin-top: 16px;
+      }
+    }
   }
 }
 
@@ -207,15 +263,22 @@
     background-color: white;
   }
 
-  @media (max-width: 505px) {
-    text-align: center;
+  @media (max-width: 650px) {
+    margin-left: 0;
   }
 }
 
 .hidden {
   display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #5B616E;
+  margin-bottom: 50px;
+  order: 4;
 
-  @media (max-width: 1120px) {
+  @media (max-width: 900px) {
     display: block;
   }
 }

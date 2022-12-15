@@ -13,6 +13,7 @@ import cubic8 from '../../img/home/cubic8.png';
 import laptop from '../../img/home/laptop.png';
 import fintech from '../../img/fintech.png';
 import galaxy_digital from '../../img/galaxy_digital.png';
+import people from '../../img/people.png';
 import hsbc from '../../img/hsbc.png';
 import silvergate from '../../img/silvergate.png';
 import sig from '../../img/sig.png';
@@ -227,6 +228,7 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
                               </span>
                   </a>
                 </div>
+                <img className="people-one" src={people} alt="People"/>
               </div>
             </div>
           </div>

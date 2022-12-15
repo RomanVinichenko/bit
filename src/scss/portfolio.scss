@@ -3,6 +3,15 @@
 .portfolio-section {
   overflow: hidden;
   margin: 110px 0 80px;
+  @media (max-width: 1300px) {
+    margin: 80px 0;
+  }
+  @media (max-width: 900px) {
+    margin: 70px 0;
+  }
+  @media (max-width: 700px) {
+    margin: 50px 0;
+  }
 }
 
 .make-your-portfolio {
@@ -26,6 +35,9 @@
   line-height: 1.4;
   color: #5B616E;
   z-index: 5;
+  @media (max-width: 900px) {
+    font-family: "DM Sans", sans-serif;
+  }
 }
 
 .make-your-portfolio-flex {
@@ -34,47 +46,39 @@
   justify-content: space-between;
   position: relative;
 
-  @media (max-width: 1136px) {
+  @media (max-width: 900px) {
     flex-direction: column;
-
-    .make-your-portfolio-right {
-      order: 0;
-      height: auto;
-    }
-
-    .make-your-portfolio-left {
-      order: 1;
-    }
-  }
-}
-
-.make-your-portfolio-left {
-  @media (max-width: 1136px) {
-    margin-top: 0;
   }
 }
 
 .make-your-portfolio-right {
-  position: absolute;
-  width: 1145px;
-  margin: auto 0;
   height: 688px;
-  right: 0;
-  left: 470px;
-  top: 2px;
 
   img {
-    z-index: -1;
-    margin: auto 0;
     height: 100%;
     object-fit: contain;
     transform: scale(1.15);
+    @media(max-width: 1300px) {
+      transform: scale(1.1);
+    }
+    @media (max-width: 1050px) {
+      transform: scale(1.2);
+    }
+    @media (max-width: 900px) {
+      transform: scale(1);
+    }
   }
 
-  @media (max-width: 1720px) {
-    position: relative;
-    width: auto;
-    left: 0;
+  @media(max-width: 1300px) {
+    height: 600px;
+  }
+  @media (max-width: 1100px) {
+    height: 500px;
+  }
+  @media (max-width: 900px) {
+    height: auto;
+    max-width: 750px;
+    margin: 50px auto 50px;
   }
 }
 
@@ -82,6 +86,19 @@
   width: 94px;
   height: 94px;
   margin-right: 32px;
+  @media (max-width: 1300px) {
+    margin-right: 20px;
+    width: 85px;
+    height: 85px;
+  }
+  @media (max-width: 1100px) {
+    margin-top: 0;
+    margin-right: 16px;
+  }
+  @media (max-width: 650px) {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .portfolio-item {
@@ -89,14 +106,31 @@
 
   &:not(:last-child) {
     margin-bottom: 56px;
-    @media (max-width: 1400px) {
-      margin-bottom: 42px;
+    @media (max-width: 1500px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 1300px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 1100px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 650px) {
+      margin-bottom: 26px;
     }
   }
 
   svg {
     width: 94px;
     height: 94px;
+    @media(max-width: 1300px) {
+      width: 85px;
+      height: 85px;
+    }
+    @media (max-width: 650px) {
+      width: 72px;
+      height: 72px;
+    }
   }
 }
 
@@ -121,22 +155,34 @@
 .portfolio-item-text {
   display: flex;
   flex-direction: column;
+
+  .h3-heading {
+    @media(max-width: 1300px) {
+      font-size: 28px;
+    }
+    @media (max-width: 1100px) {
+      font-size: 24px;
+    }
+    @media (max-width: 650px) {
+      font-size: 20px;
+    }
+  }
 }
 
 .make-your-portfolio-left {
   max-width: 459px;
   width: 100%;
   z-index: 5;
-}
 
-.portfolio-item-big-text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 130%;
-
-  @media (max-width: 768px) {
-    font-size: 20px;
+  @media(max-width: 1300px) {
+    max-width: 400px;
+  }
+  @media (max-width: 1100px) {
+    max-width: 360px;
+  }
+  @media (max-width: 900px) {
+    order: 1;
+    max-width: fit-content;
   }
 }
 
@@ -144,4 +190,10 @@
   font-size: 16px;
   line-height: 1.3;
   color: #5B616E;
+  @media (max-width: 650px) {
+    font-size: 14px;
+  }
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
 }

@@ -48,6 +48,9 @@
     color: #879DC5;
     font-weight: 400;
   }
+  @media (max-width: 1300px) {
+    min-width: 320px;
+  }
 }
 
 .btn-main {

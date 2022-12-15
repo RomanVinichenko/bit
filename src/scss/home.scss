@@ -3,6 +3,7 @@
   justify-content: center;
   width: 100%;
   margin: 0 auto;
+  z-index: -1;
   position: relative;
 }
 
@@ -14,6 +15,14 @@
   line-height: 1.4;
   color: #5B616E;
   margin-bottom: 50px;
+  @media (max-width: 750px) {
+    text-align: center;
+    margin: 0 auto 50px;
+    font-size: 20px;
+  }
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
 }
 
 .flex-main-wrapper {
@@ -22,10 +31,7 @@
 
 .intro {
   &-section {
-    min-height: 100vh;
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
+    z-index: 5;
     position: relative;
 
     .phone1-main {
@@ -37,6 +43,9 @@
 
       @media (max-width: 1520px) {
         max-width: 243px;
+      }
+      @media (max-width: 1400px) {
+        max-width: 210px;
       }
     }
 
@@ -50,13 +59,23 @@
       @media (max-width: 1520px) {
         max-width: 243px;
       }
+      @media (max-width: 1400px) {
+        max-width: 210px;
+      }
+      @media (max-width: 1180px) {
+        margin-left: 30px;
+      }
     }
 
     .main-cubic1 {
+      z-index: -1;
       position: absolute;
       bottom: 0;
       top: 6%;
       left: -6%;
+      @media (max-width: 750px) {
+        display: none;
+      }
     }
 
     .main-cubic2 {
@@ -71,6 +90,9 @@
       bottom: 0;
       z-index: 1;
       left: -6%;
+      @media (max-width: 1300px) {
+        bottom: -20%;
+      }
     }
 
     .h1-heading {
@@ -88,10 +110,22 @@
     justify-content: space-between;
     width: 100%;
     height: calc(100vh - 88px);
+    @media (max-width: 750px) {
+      height: auto;
+      padding: 80px 0;
+    }
+    @media (max-width: 500px) {
+      padding: 50px 0;
+    }
   }
 
   &-col {
+    position: relative;
     max-width: 50%;
     width: 100%;
+    z-index: 10;
+    @media (max-width: 750px) {
+      max-width: 100%;
+    }
   }
 }

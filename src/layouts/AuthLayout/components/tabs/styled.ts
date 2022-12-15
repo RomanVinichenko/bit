@@ -41,10 +41,6 @@ const Container = styled.div<{
   position: relative;
   display: flex;
 
-  @media (max-width:768px){
-    width: 277px;
-  }
-
   & > div {
     width: ${({ elementsCount }) => 100 / elementsCount + '%'};
   }

@@ -36,6 +36,16 @@
     margin-right: 12px;
   }
 }
+.input-box {
+  width: 100%;
+}
+
+
+.irIjKF {
+  @media (max-width: 960px) {
+    width: 100% !important;
+  }
+}
 
 .nav-list-item-btn {
   .btn-primary-blue {

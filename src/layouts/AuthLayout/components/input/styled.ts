@@ -57,6 +57,7 @@ const Input = styled.input`
     -webkit-appearance: none;
     margin: 0;
   }
+  
 
   /* Firefox */
   input[type=number] {

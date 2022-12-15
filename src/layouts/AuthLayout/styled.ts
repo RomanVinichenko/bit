@@ -25,7 +25,7 @@ const Container = styled.div`
 const Content = styled.div`
   max-width: 1520px;
   margin: 0 auto;
-  padding: 60px 20px 190px 20px;
+  padding: 60px 20px 0 20px;
   position: relative;
   width: 100%;
   height: fit-content;
@@ -57,7 +57,6 @@ const FormWrapper = styled.div`
   @media (max-width: 768px) {
     gap: 35px;
     padding: 25px 15px 50px 15px;
-    width: 335px;
   }
 
   @media (max-height: 768px) {
@@ -68,6 +67,7 @@ const FormWrapper = styled.div`
   @media (max-height: 900px) {
     gap: 35px;
     padding: 30px;
+    margin: 0 auto;
   }
   
   .form-title {
@@ -146,6 +146,7 @@ const GreetingBox = styled.div`
 
     @media (max-width: 960px) {
       text-align: center;
+      margin-right: 0;
     }
   }
 
@@ -165,7 +166,12 @@ const GreetingBox = styled.div`
 
     @media (max-width: 960px) {
       text-align: center;
+      margin-bottom: 50px;
     }
+  }
+  @media (max-width: 960px) {
+    margin-right: 0;
+    padding-top: 0;
   }
 `
 

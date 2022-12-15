@@ -4,6 +4,7 @@
   margin-right: 16px;
 
   a {
+    display: none;
     font-weight: 700;
     display: flex;
     justify-content: center;
@@ -48,6 +49,7 @@
 }
 
 .nav-list-item-btn {
+  outline: none;
   .btn-primary-blue {
     min-width: max-content;
     text-align: center;

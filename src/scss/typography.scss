@@ -84,6 +84,9 @@
     display: none;
   }
 }
+.header-logo-pc, .nav-list-item a {
+  outline: none;
+}
 .trade-now-text {
   z-index: 5;
   position: relative;

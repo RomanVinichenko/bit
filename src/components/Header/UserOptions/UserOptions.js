@@ -42,7 +42,7 @@ function UserOptions({auth}) {
    }, []);
 
    return (
-      <li className="nav-list-language website-settings-select">
+      <li className="website-settings-select">
          <button className="UserOptionsButton">
             <span className="website-language">{curLang.languageNamed}</span> <span className="website-slash">/</span>{' '}
             <span className="website-currency">{options.currency}</span>

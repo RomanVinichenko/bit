@@ -97,24 +97,6 @@
   width: fit-content;
   max-width: 100%;
 }
-.website-settings-list {
-  li {
-    &:not(:last-child) {
-      @media (max-width: 992px) {
-          margin-bottom: 5px!important;
-      }
-    }
-    @media (max-width: 992px) {
-      padding-left: 20px;
-    }
-    label {
-      span {
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    }
-  }
-}
 /* The container */
 .form-label {
   display: flex;

@@ -339,29 +339,6 @@
     }
   }
 }
-.nav-list-language {
-  @media (max-width: 992px) {
-    &:hover {
-      cursor: auto;
-    }
-  }
-}
-.website-slash {
-  @media (max-width: 992px) {
-    cursor: auto!important;
-    padding: 0 3px!important;
-  }
-}
-.website-currency {
-  @media (max-width: 992px) {
-    margin-left: 0!important;
-  }
-}
-.website-language {
-  @media (max-width: 992px) {
-    margin-right: 0!important;
-  }
-}
 
 .profile-parent-header-mobile {
   display: none;
@@ -382,173 +359,18 @@
   }
 }
 
-.website-settings {
-  &-select {
-    @media (max-width: 992px) {
-      border-top: 1px solid #EDEDED;
-      padding-top: 25px;
-
-      > a:first-of-type {
-        display: flex;
-        justify-content: space-between;
-
-        .text-lightgrey:nth-child(2) {
-          display: none;
-        }
-      }
-    }
-
-    &:hover {
-      .website-settings-choice {
-        opacity: 1;
-        visibility: visible;
-
-        @media (max-width: 992px) {
-          //display: none;
-          //opacity: 0;
-
-          border: 0;
-          box-shadow: 0 20px 40px rgb(0 0 0 / 50%);
-
-          &.lang-is-open,
-          &.currency-is-open {
-            display: block;
-            padding: 54px 20px 25px;
-            height: fit-content;
-            width: 100%;
-            top: 48px;
-            left: -20px;
-
-            .website-settings-col {
-              border: none;
-            }
-          }
-
-          &.lang-is-open {
-            .website-settings-col:last-of-type {
-              display: none;
-            }
-          }
-
-          &.currency-is-open {
-            .website-settings-col:first-of-type {
-              display: none;
-            }
-          }
-
-          &.lang-is-open.currency-is-open {
-            .website-settings-col:last-of-type {
-              display: block;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &-choice {
-    background-color: #FFFFFF;
-    z-index: 10;
-    padding: 20px;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    right: 0;
-    top: 37px;
-    border: 1px solid $black;
-    border-radius: 4px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0 30px;
-    transition: all 0.3s;
-
-    * {
-      font-size: 14px;
-    }
-
-    @media (max-width: 992px) {
-      left: 0;
-      right: unset;
-      max-width: 260px;
-      background: #FFFFFF;
-      border-radius: 0;
-    }
-  }
-
-  &-col {
-    @media (max-width: 992px) {
-      position: relative;
-      width: 100%;
-    }
-  }
-
-  &-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      &:not(:last-child) {
-        margin-bottom: 25px;
-      }
-    }
-  }
-
-  &-heading {
-    display: block;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid $black-color3;
-
-    @media (max-width: 992px) {
-      display: none;
-    }
-  }
-
-  &-close {
-    cursor: pointer;
-    display: none;
-    background-image: url(../img/icons/burger-close.svg);
-    background-size: contain;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 25px;
-    right: 40px;
-    z-index: 1;
-
-    @media (max-width: 992px) {
-      display: inline-block;
-    }
+.lang-is-open {
+  @media (max-width: 992px) {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 }
 
-.website-language {
-
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
-  margin-right: 3px;
-}
-
-.website-currency {
-  font-weight: 500;
-
-  font-size: 16px;
-  line-height: 21px;
-  color: $grey-color2;
-  margin-left: 3px;
-}
-
-.website-slash {
-
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 21px;
-  color: #ACADAF;
+.currency-is-open {
+  @media (max-width: 992px) {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
 }
 
 .nav {
@@ -556,12 +378,6 @@
   align-items: center;
 
   &-list {
-    padding: 0;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    margin: 0;
-
     &-language {
       @media (max-width: 992px) {
         width: 90%;
@@ -745,32 +561,6 @@
             line-height: 18px;
           }
         }
-
-      }
-
-      .display-control-options {
-        height: 63px;
-        border-top: 1px solid #EDEDED;
-        padding-top: 15px;
-        display: flex;
-        align-items: center;
-
-        .website-language,
-        .website-currency,
-        .website-slash {
-          font-size: 14px;
-          line-height: 18px;
-        }
-
-        li {
-          border: none;
-          margin: 0;
-          padding-top: 0;
-        }
-
-        .UserOptionsButton {
-          margin: 0 0 0 20px;
-        }
       }
     }
 
@@ -905,20 +695,6 @@
   }
 }
 
-.display-control-options {
-  display: none;
-  @media (max-width: 992px) {
-    display: block;
-    width: 100%;
-  }
-}
-
-.display-control-mobile {
-  @media (max-width: 992px) {
-    display: none;
-  }
-}
-
 .account-svg {
   position: relative;
   top: 4px;
@@ -947,20 +723,190 @@
   }
 }
 
-.website-settings-select {
+.display-control-mobile {
+  margin-left: 56px;
   height: 36px;
   display: flex;
-  cursor: pointer;
-  width: 100%;
   align-items: center;
-  justify-content: center;
-  @media (max-width: 992px) {
-    justify-content: flex-start;
-    width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    .website-settings-choice {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
+  .UserOptionsButton {
+    display: flex;
+  }
+
+  .website-language,
+  .website-currency,
+  .website-slash {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .website-language {
+    margin-right: 3px;
+  }
+
+  .website-currency {
+    margin-left: 3px;
+    color: #9EA7B7;
+  }
+
+  .website-slash {
+    color: #ACADAF;
+  }
+
+  .website-settings-choice {
+    cursor: default;
+    background-color: #FFFFFF;
+    z-index: 20;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    box-shadow: 0 20px 40px rgb(0 0 0 / 50%);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 30px;
+    transition: all 0.3s;
+  }
+
+  .website-settings-close {
+    display: none;
+    visibility: hidden;
+  }
+
+  .website-settings-heading {
+    display: block;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+
+  .website-settings-list {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 1500px) {
+    margin-left: 40px;
+  }
+  @media (max-width: 1300px) {
+    margin-left: 25px;
+  }
+  @media (max-width: 1180px) {
+    margin-left: 18px;
+  }
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 
-.UserOptionsButton {
-  cursor: pointer;
+.display-control-options {
+  height: 63px;
+  position: relative;
+  border-top: 1px solid #EDEDED;
+  padding-top: 15px;
+  align-items: center;
+  display: none;
+  width: 100%;
+
+  .website-settings-list {
+    li {
+      padding-left: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+
+      label {
+        span {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+
+  .website-settings-select {
+    position: relative;
+
+  }
+
+  .website-settings-choice {
+    &.lang-is-open,
+    &.currency-is-open {
+      display: block;
+      padding: 54px 20px 25px;
+      height: fit-content;
+      width: 100%;
+      top: 48px;
+      left: -20px;
+
+      .website-settings-col {
+        border: none;
+      }
+    }
+
+    &.lang-is-open {
+      .website-settings-col:last-of-type {
+        display: none;
+      }
+    }
+
+    &.currency-is-open {
+      .website-settings-col:first-of-type {
+        display: none;
+      }
+    }
+
+    &.lang-is-open.currency-is-open {
+      .website-settings-col:last-of-type {
+        display: block;
+      }
+    }
+  }
+
+  .website-settings-heading {
+    display: none;
+  }
+
+  .website-language,
+  .website-currency,
+  .website-slash {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .website-settings-close {
+    cursor: pointer;
+    display: none;
+    background-image: url(../img/icons/burger-close.svg);
+    background-size: contain;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    z-index: 1;
+  }
+
+  @media (max-width: 992px) {
+    display: flex;
+  }
 }

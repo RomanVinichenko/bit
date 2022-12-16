@@ -124,8 +124,8 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
           <div className='container-parent'>
             <div className='trades-flex'>
               <div className='trade-item'>
+                <p className='trade-item-small-text'>{t('dailyVolumeTraded')}</p>
                 <span className='trade-item-big-text'>$273M</span>
-                <span className='trade-item-small-text'>{t('dailyVolumeTraded')}</span>
               </div>
               <div className='trade-item'>
                 <span className='trade-item-big-text'>1M+</span>

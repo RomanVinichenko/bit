@@ -30,15 +30,11 @@
 }
 
 .make-your-portfolio-small-text {
-  font-family: "DM Sans-Medium", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   color: #5B616E;
   z-index: 5;
-  @media (max-width: 900px) {
-    font-family: "DM Sans", sans-serif;
-  }
 }
 
 .make-your-portfolio-flex {
@@ -58,16 +54,6 @@
   img {
     height: 100%;
     object-fit: contain;
-    transform: scale(1.15);
-    @media(max-width: 1300px) {
-      transform: scale(1.1);
-    }
-    @media (max-width: 1050px) {
-      transform: scale(1.2);
-    }
-    @media (max-width: 900px) {
-      transform: scale(1);
-    }
   }
 
   @media(max-width: 1300px) {

@@ -123,7 +123,7 @@ const GreetingBox = styled.div`
   .title {
     max-width: 663px;
     width: 100%;
-    font-family: "DM Sans-Medium", sans-serif;
+    
     margin-bottom: 24px;
     font-size: 64px;
     font-weight: 500;
@@ -153,7 +153,7 @@ const GreetingBox = styled.div`
   .description {
     max-width: 564px;
     width: 100%;
-    font-family: "DM Sans-Medium", sans-serif;
+    
     font-size: 24px;
     font-weight: 500;
     line-height: 1.4;

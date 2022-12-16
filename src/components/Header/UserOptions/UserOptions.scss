@@ -2,8 +2,13 @@
   position: relative;
   padding: 0;
   outline: none;
-  margin-left: 56px;
   display: flex;
+  span {
+    display: block;
+  }
+}
+.display-control-mobile {
+  margin-left: 56px;
 
   @media (max-width: 1500px) {
     margin-left: 40px;
@@ -13,9 +18,5 @@
   }
   @media (max-width: 1180px) {
     margin-left: 18px;
-  }
-
-  span {
-    display: block;
   }
 }

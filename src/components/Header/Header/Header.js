@@ -69,7 +69,6 @@ function Header() {
                   </NavLink>
                </div>
                <a id="slideout-close" className="slideout-close" href="#">
-                  &times;
                </a>
                   <div className="nav-list-links slideout-menu" id="slideout-menu">
                      <NavLink to={`/${lang}`} className='header-logo-pc'>

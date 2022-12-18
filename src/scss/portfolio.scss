@@ -63,9 +63,10 @@
     height: 500px;
   }
   @media (max-width: 900px) {
-    height: 100%;
+    height: fit-content;
     max-width: 750px;
     margin: 50px auto 50px;
+    max-height: 750px;
   }
 }
 

@@ -503,6 +503,20 @@
   display: none;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  @media (max-width: 992px) {
+    align-items: flex-start;
+  }
+
+  .nav-list-padding {
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .slideout-menu {
     background: #FFFFFF;
@@ -816,11 +830,13 @@
 
 .display-control-options {
   height: 63px;
+  padding-left: 20px;
   position: relative;
   border-top: 1px solid #EDEDED;
   padding-top: 15px;
-  align-items: center;
   display: none;
+  align-items: center;
+
   width: 100%;
 
   .website-settings-list {
@@ -840,20 +856,21 @@
     }
   }
 
-  .website-settings-select {
-    position: relative;
-
-  }
-
   .website-settings-choice {
+    display: none;
+
     &.lang-is-open,
     &.currency-is-open {
+      background: #FFFFFF;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       display: block;
+      position: absolute;
       padding: 54px 20px 25px;
-      height: fit-content;
+      max-width: 340px;
       width: 100%;
-      top: 48px;
-      left: -20px;
+      top: 80px;
+      left: -5%;
+      z-index: 30;
 
       .website-settings-col {
         border: none;
@@ -879,20 +896,34 @@
     }
   }
 
-  .website-settings-heading {
-    display: none;
-  }
+  .website-settings-select {
+    .UserOptionsButton {
+      display: flex;
+    }
 
-  .website-language,
-  .website-currency,
-  .website-slash {
-    font-size: 14px;
-    line-height: 18px;
+    .website-language {
+      font-weight: 500;
+      margin-right: 3px;
+    }
+
+    .website-slash {
+      cursor: default;
+    }
+
+    .website-currency {
+      margin-left: 3px;
+    }
+
+    .website-language,
+    .website-currency,
+    .website-slash {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   .website-settings-close {
     cursor: pointer;
-    display: none;
     background-image: url(../img/icons/burger-close.svg);
     background-size: contain;
     align-items: center;
@@ -904,6 +935,10 @@
     top: 25px;
     right: 40px;
     z-index: 1;
+  }
+
+  .website-settings-heading {
+    display: none;
   }
 
   @media (max-width: 992px) {

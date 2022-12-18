@@ -841,14 +841,14 @@
 }
 
 .display-control-options {
-  height: 63px;
+  //height: 63px;
   padding-left: 20px;
   position: relative;
   border-top: 1px solid #EDEDED;
-  padding-top: 15px;
+  padding-top: 30px;
   display: none;
-  align-items: center;
-
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 
   .website-settings-list {
@@ -870,19 +870,21 @@
 
   .website-settings-choice {
     display: none;
+    position: relative;
 
     &.lang-is-open,
     &.currency-is-open {
-      overflow-y: scroll;
       background: #FFFFFF;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       display: block;
-      position: absolute;
+      margin-left: -40px;
+      margin-top: 20px;
+      //position: absolute;
       padding: 54px 20px 25px;
       max-width: 340px;
       width: 100%;
-      top: 80px;
-      left: -5%;
+      //top: 80px;
+      //left: -5%;
       z-index: 30;
 
       .website-settings-col {

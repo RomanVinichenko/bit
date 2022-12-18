@@ -873,6 +873,7 @@
 
     &.lang-is-open,
     &.currency-is-open {
+      overflow-y: scroll;
       background: #FFFFFF;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       display: block;

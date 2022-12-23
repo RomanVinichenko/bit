@@ -1,7 +1,6 @@
 @import "variables";
 
 .main-layout {
-  background-color: #FFFFFF;
   text-decoration: none !important;
 }
 
@@ -46,7 +45,6 @@
 .app {
   &-section {
     padding: 197px 0;
-    background-color: #0052FF;
     background-image: url(../img/people.png);
     background-repeat: no-repeat;
     background-position: right 15% bottom;

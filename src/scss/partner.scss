@@ -1,20 +1,11 @@
 .partners-flex {
   span {
-    text-align: center;
-    font-size: 56px;
-    line-height: 73px;
-    color: #0A0B0D;
-    max-width: 756px;
-    display: block;
-    width: 100%;
-    margin: 0 auto 72px;
-
     font-weight: 700;
-
-    @media (max-width: 1500px) {
-      font-size: 44px;
-      line-height: 52px;
-    }
+    font-size: 40px;
+    line-height: 52px;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 72px;
 
     @media (max-width: 1200px) {
       font-size: 38px;
@@ -33,7 +24,8 @@
 
 .partner {
   &-section {
-    padding: 80px 0;
+    margin-bottom: 80px;
+    padding: 0 0 80px 0;
     @media (max-width: 900px) {
       padding: 70px 0;
     }
@@ -43,14 +35,12 @@
   }
 
   &-row {
-    margin-bottom: 72px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0 40px;
     img {
-      height: 100%;
-      margin: auto;
-      object-fit: contain;
+      margin: 0 auto;
+      height: 55px;
     }
     @media (max-width: 1100px) {
       grid-gap: 0 30px;

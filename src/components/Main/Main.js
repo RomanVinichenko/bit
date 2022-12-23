@@ -1,23 +1,17 @@
 import ios from '../../img/icons/ios.svg';
 import android from '../../img/icons/android.svg';
-import phone1 from '../../img/home/phone1.png';
-import phone2 from '../../img/home/phone2.png';
-import cubic1 from '../../img/home/cubic1.png';
-import cubic2 from '../../img/home/cubic2.png';
-import cubic3 from '../../img/home/cubic3.png';
-import cubic4 from '../../img/home/cubic4.png';
-import cubic5 from '../../img/home/cubic5.png';
+// import phone1 from '../../img/home/phone1.png';
 import cubic6 from '../../img/home/cubic6.png';
 import cubic7 from '../../img/home/cubic7.png';
 import cubic8 from '../../img/home/cubic8.png';
 import laptop from '../../img/home/laptop.png';
-import fintech from '../../img/fintech.png';
-import galaxy_digital from '../../img/galaxy_digital.png';
+import fintech from '../../img/fintech.svg';
+import galaxy_digital from '../../img/galaxy_digital.svg';
 import people from '../../img/people.png';
-import hsbc from '../../img/hsbc.png';
-import silvergate from '../../img/silvergate.png';
-import sig from '../../img/sig.png';
-import dukascopy from '../../img/dukascopy.png';
+import hsbc from '../../img/hsbc.svg';
+import silvergate from '../../img/silvergate.svg';
+import sig from '../../img/sig.svg';
+import dukascopy from '../../img/dukascopy.svg';
 import {ReactComponent as Portfel} from '../../img/home/portfel.svg';
 import {ReactComponent as Reccuring} from '../../img/home/reccuring.svg';
 import {ReactComponent as Vault} from '../../img/home/vault.svg';
@@ -41,7 +35,6 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
       <div className="wrapper">
         <section className="intro-section">
           <div className="container-parent">
-            <img src={cubic1} className='main-cubic1'/>
             <div className="intro-row">
               <div className="intro-col">
                 <h1 className="trade-now-text">{t('tradeNow')}</h1>
@@ -59,13 +52,32 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
               </div>
               <div className="intro-col right-side">
                 <div className='phones-main'>
-                  <img src={cubic3} className='main-cubic3'/>
-                  <img className='phone1-main' src={phone1}/>
-                  <img className='phone2-main' src={phone2}/>
-                  <img src={cubic2} className='main-cubic2'/>
+                  {/*<img className='phone1-main' src={phone1}/>*/}
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="partner-section">
+          <div className="container-parent">
+            <div className='partners-flex'>
+                     <span className='h1-heading'>
+                        {t('reliableInstitutionalAccess')}
+                     </span>
+            </div>
+            <div className="partner-row">
+              <img src={fintech} className="partner-row-img" alt=""/>
+              <img src={galaxy_digital} className="partner-row-img" alt=""/>
+              <img src={hsbc} className="partner-row-img" alt=""/>
+              <img src={silvergate} className="partner-row-img" alt=""/>
+              <img src={sig} className="partner-row-img" alt=""/>
+              <img src={dukascopy} className="partner-row-img" alt=""/>
+            </div>
+            {/*<div className='more-button-container'>*/}
+            {/*  <NavLink to={`/${lang}`}>*/}
+            {/*    {t('learnMore')}*/}
+            {/*  </NavLink>*/}
+            {/*</div>*/}
           </div>
         </section>
         <CurrencyPairs/>
@@ -232,34 +244,7 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
             </div>
           </div>
         </section>
-        <section className="partner-section">
-          <div className="container-parent">
-            <div className='partners-flex'>
-                     <span className='h1-heading'>
-                        {t('reliableInstitutionalAccess')}
-                     </span>
-            </div>
-            <div className="partner-row">
-              <img src={fintech} className="partner-row-img" alt=""/>
-              <img src={galaxy_digital} className="partner-row-img" alt=""/>
-              <img src={hsbc} className="partner-row-img" alt=""/>
-              <img src={silvergate} className="partner-row-img" alt=""/>
-              <img src={sig} className="partner-row-img" alt=""/>
-              <img src={dukascopy} className="partner-row-img" alt=""/>
-            </div>
-            <div className='more-button-container'>
-              <NavLink to={`/${lang}`}>
-                {t('learnMore')}
-              </NavLink>
-            </div>
-          </div>
-        </section>
         <section className="subscribe-section">
-          <img src={cubic4} className='cubic1-subscribe'/>
-          <img src={cubic5} className='cubic2-subscribe'/>
-          <img src={cubic6} className='cubic3-subscribe'/>
-          <img src={cubic7} className='cubic4-subscribe'/>
-          <img src={cubic8} className='cubic5-subscribe'/>
           <div className="container-parent">
             <h2 className="container-parent-h2-heading white">{t('joinTradersWorld')}</h2>
             <div className='subscribe-form-item'>

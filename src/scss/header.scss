@@ -7,26 +7,18 @@
     outline: none;
     font-weight: 700;
     display: flex;
-    justify-content: center;
+    text-align: center;
+    width: fit-content;
     align-items: center;
     min-width: max-content;
     cursor: pointer;
     border-radius: 4px;
-    border: 1px solid #0052FF;
-    background-color: #fff;
+    background-color: transparent;
     height: 36px;
     padding: 0 16px;
-
     font-size: 17px;
     line-height: 22px;
     letter-spacing: 0.01em;
-    color: $blue;
-    transition: all 0.7s;
-
-    &:hover {
-      color: #fff;
-      background-color: #0052FF;
-    }
 
     @media (max-width: 1180px) {
       font-size: 16px;
@@ -53,32 +45,23 @@
 }
 
 .nav-list-item-btn {
-  outline: none;
-
   .btn-primary-blue {
     min-width: max-content;
     text-align: center;
-
-    color: $white;
     font-weight: 700;
+    outline: none;
+    border: none;
     font-size: 17px;
     line-height: 22px;
     letter-spacing: 0.01em;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 36px;
+    height: 42px;
     padding: 0 16px;
-    background-color: #0052FF;
     border-radius: 4px;
-    border: 1px solid $blue;
     cursor: pointer;
-    transition: all 0.7s;
-
-    &:hover {
-      background: $white;
-      color: $blue;
-    }
+    background-image: linear-gradient(0deg, #0052FF, #0052FF), linear-gradient(135.67deg, #047FFE 0%, #00007F 99%);
 
     @media (max-width: 1180px) {
       font-size: 16px;
@@ -111,6 +94,8 @@
 }
 
 .header-logo-pc {
+  width: 101px;
+  height: 37px;
   position: relative;
   top: 3px;
   @media (max-width: 992px) {
@@ -170,10 +155,26 @@
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   padding: 20px 0;
   transition: 0.7s;
-  color: #000000;
-  border-bottom: 1px solid #E4E4E4;
+  color: $white;
+  background: transparent;
+  border-bottom: 1px solid #252525;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1F1F21;
+    //z-index: -1;
+    content: "";
+  }
 
   a,
   button {
@@ -410,6 +411,7 @@
 
       li + li {
         margin-left: 56px;
+
         @media (max-width: 1500px) {
           margin-left: 40px;
         }
@@ -436,13 +438,8 @@
     a {
       font-weight: 400;
       font-size: 16px;
+      line-height: 21px;
       text-decoration: none;
-      color: black;
-      white-space: nowrap;
-
-      &:hover {
-        color: #0052FF;
-      }
 
       @media (max-width: 1100px) {
         font-size: 15px;
@@ -666,24 +663,9 @@
 
 .nav {
   width: 100%;
-}
-
-.main-layout {
-  &::before {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    opacity: 0;
-    visibility: hidden;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 200vh;
-    z-index: 20;
-    content: "";
-    transition: all 0.3s;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+  z-index: 30;
+  background-color: transparent;
+  position: relative;
 }
 
 .header-open {

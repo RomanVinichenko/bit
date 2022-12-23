@@ -1,19 +1,12 @@
 .phones-main {
-  display: flex;
-  justify-content: center;
-  width: 100%;
   margin: 0 auto;
-  z-index: -1;
-  position: relative;
 }
 
 .better-trading-small {
   font-weight: 500;
-  position: relative;
-
   font-size: 24px;
+  color: #7383A5;
   line-height: 1.4;
-  color: #5B616E;
   margin-bottom: 50px;
   @media (max-width: 1180px) {
     font-size: 22px;
@@ -51,94 +44,20 @@
 }
 
 .intro {
+
   &-section {
-    z-index: 5;
     position: relative;
-
-    .phone1-main {
-      position: relative;
-      max-width: 273px;
-      width: 100%;
-      object-fit: contain;
-      margin-bottom: auto;
-
-      @media (max-width: 1520px) {
-        max-width: 243px;
-      }
-      @media (max-width: 1300px) {
-        max-width: 210px;
-      }
-      @media (max-width: 900px) {
-        max-width: 180px;
-      }
-      @media (max-width: 830px) {
-        max-width: 150px;
-      }
-    }
-
-    .phone2-main {
-      margin-top: 75px;
-      margin-left: 45px;
-      z-index: 2;
-      max-width: 273px;
-      position: relative;
-
-      @media (max-width: 1520px) {
-        max-width: 243px;
-      }
-      @media (max-width: 1300px) {
-        max-width: 210px;
-      }
-      @media (max-width: 1180px) {
-        margin-left: 30px;
-      }
-      @media (max-width: 900px) {
-        max-width: 180px;
-        margin-left: 15px;
-      }
-      @media (max-width: 830px) {
-        max-width: 150px;
-        margin-left: 10px;
-      }
-    }
-
-    .main-cubic1 {
-      z-index: -1;
+    &::after {
       position: absolute;
-      bottom: 0;
-      top: 6%;
-      left: -6%;
-      @media (max-width: 750px) {
-        display: none;
-      }
-      @media (max-width: 900px) {
-        transform: scale(0.8);
-        top: 0;
-      }
+      top: -20%;
+      right: -15%;
+      content: url("../img/home/phone1.png");
     }
 
-    .main-cubic2 {
-      position: absolute;
-      z-index: 0;
-      right: -3%;
-      top: 0;
-      @media (max-width: 900px) {
-        transform: scale(0.8);
-      }
-    }
-
-    .main-cubic3 {
-      position: absolute;
-      bottom: 0;
-      z-index: 1;
-      left: -6%;
-      @media (max-width: 1300px) {
-        bottom: -20%;
-      }
-      @media (max-width: 900px) {
-        transform: scale(0.8);
-      }
-    }
+    //.phone1-main {
+    //  width: 100%;
+    //  object-fit: contain;
+    //}
 
     .h1-heading {
       margin: 0 0 15px;
@@ -154,9 +73,9 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: calc(100vh - 88px);
+    min-height: 100vh;
     @media (max-width: 992px) {
-      height: calc(100vh - 46px);
+      //height: calc(100vh - 46px);
     }
     @media (max-width: 750px) {
       height: auto;

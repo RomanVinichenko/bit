@@ -7,8 +7,6 @@
   margin-bottom: 72px;
   line-height: 130%;
   text-align: left;
-
-  color: #0A0B0D;
   font-weight: 700;
 
   @media (max-width: 1400px) {
@@ -37,12 +35,10 @@
 
 .make-your-grow {
   z-index: 5;
-
   font-size: 56px;
   font-weight: 700;
   line-height: 1.3;
   text-align: center;
-  color: #0A0B0D;
   margin-bottom: 16px;
   @media (max-width: 1200px) {
     font-size: 50px;
@@ -83,16 +79,12 @@
   outline: none;
 }
 .trade-now-text {
-  z-index: 5;
-  position: relative;
-  max-width: 600px;
-  width: 100%;
-  //
+  font-weight: 700;
   font-size: 64px;
-  font-weight: 500;
+  color: #FFFFFF;
+  max-width: 564px;
   line-height: 1.3;
   margin-bottom: 24px;
-  color: #0A0B0D;
   @media (max-width: 1300px) {
     font-size: 54px;
   }
@@ -114,8 +106,6 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 1.3;
-  color: #0A0B0D;
-
   margin-bottom: 8px;
 
   @media (max-width: 768px) {

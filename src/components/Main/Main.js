@@ -134,22 +134,27 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
         </section>
         <section className='trades-section'>
           <div className='container-parent'>
-            <div className='trades-flex'>
-              <div className='trade-item'>
-                <p className='trade-item-small-text'>{t('dailyVolumeTraded')}</p>
-                <span className='trade-item-big-text'>$273M</span>
+            <div className="trade-wrapper">
+              <div className="trade-title">
+                <span className='trade-title-span'>{t('whyBityx')}</span>
               </div>
-              <div className='trade-item'>
-                <span className='trade-item-big-text'>1M+</span>
-                <span className='trade-item-small-text'>{t('registeredUsers')}</span>
-              </div>
-              <div className='trade-item'>
-                <span className='trade-item-big-text'>1000+</span>
-                <span className='trade-item-small-text'>{t('institutionsRegistered')}</span>
-              </div>
-              <div className='trade-item'>
-                <span className='trade-item-big-text'>120+</span>
-                <span className='trade-item-small-text'>{t('countriesSupported')}</span>
+              <div className='trades-flex'>
+                <div className='trade-item'>
+                  <span className='trade-item-big-text'>$273M</span>
+                  <p className='trade-item-small-text'>{t('dailyVolumeTraded')}</p>
+                </div>
+                <div className='trade-item'>
+                  <span className='trade-item-big-text'>1M+</span>
+                  <span className='trade-item-small-text'>{t('registeredUsers')}</span>
+                </div>
+                <div className='trade-item'>
+                  <span className='trade-item-big-text'>1000+</span>
+                  <span className='trade-item-small-text'>{t('institutionsRegistered')}</span>
+                </div>
+                <div className='trade-item'>
+                  <span className='trade-item-big-text'>120+</span>
+                  <span className='trade-item-small-text'>{t('countriesSupported')}</span>
+                </div>
               </div>
             </div>
           </div>
@@ -157,28 +162,29 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
         <section className='trade-like-pro-section'>
           <div className='container-parent'>
             <div className='trade-like-pro-main-flex'>
-              <span className='trade-like-pro-main-flex-h1-heading'>{t('tradeLikePro')}</span>
-              <span className='make-your-portfolio-small-text hidden'>{t('bityxHasPlentyFuture')}</span>
+
+              <div className='trade-like-pro-right'>
+                <img src={laptop}/>
+              </div>
               <div className='trade-like-pro-flex'>
+                <span className='trade-like-pro-main-flex-h1-heading'>{t('tradeLikePro')}</span>
                 <div className='trade-like-pro-left'>
                   <div className='trade-like-pro-item-absoulte-flex'>
                     <div className='trade-like-pro-item'>
-                                            <span
-                                              className='trade-like-pro-item-big-text-1'>{t('professionalAccess')}</span>
-                      <span
-                        className='trade-like-pro-item-small-text-1_1'>{t('weGiveUltraExpensiveAccess')}</span>
+                      <span className='trade-like-pro-item-big-text-1'>{t('professionalAccess')}</span>
+                      <span className='trade-like-pro-item-small-text-1_1'>{t('weGiveUltraExpensiveAccess')}</span>
                     </div>
-                    <div className='trade-like-pro-item-absoulte'>
+                    <div className='trade-like-pro-item'>
                       <span className='trade-like-pro-item-big-text-2'>{t('importantApis')}</span>
+                      <span className='trade-like-pro-item-small-text-2_2'>{t('yourOwnTradingInterface')}</span>
+                    </div>
+                    <div className='trade-like-pro-item'>
+                      <span className='trade-like-pro-item-big-text-3'>{t('constantSupport')}</span>
                       <span
-                        className='trade-like-pro-item-small-text-2_2'>{t('yourOwnTradingInterface')}</span>
+                        className='trade-like-pro-item-small-text-3_3'>{t('premiumSupport')}</span>
                     </div>
                   </div>
-                  <div className='trade-like-pro-item'>
-                    <span className='trade-like-pro-item-big-text-3'>{t('constantSupport')}</span>
-                    <span
-                      className='trade-like-pro-item-small-text-3_3'>{t('premiumSupport')}</span>
-                  </div>
+
                   <div className='more-pro-traders-flex'>
                     <NavLink to={`/${lang}`}>
                       <div className='more-pro-traders-item-blue-border'>
@@ -192,9 +198,6 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
                     </NavLink>
                   </div>
                 </div>
-              </div>
-              <div className='trade-like-pro-right'>
-                <img src={laptop}/>
               </div>
             </div>
           </div>

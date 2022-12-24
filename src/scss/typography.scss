@@ -1,22 +1,15 @@
 @import "variables";
 
 .trade-like-pro-main-flex-h1-heading {
-  position: relative;
-  display: block;
-  font-size: 56px;
-  margin-bottom: 72px;
-  line-height: 130%;
-  text-align: left;
   font-weight: 700;
+  font-size: 56px;
+  line-height: 1.3;
+  display: block;
+  margin-bottom: 40px;
 
-  @media (max-width: 1400px) {
-    margin-bottom: 50px;
-  }
+
   @media (max-width: 1200px) {
     font-size: 50px;
-  }
-  @media (max-width: 1150px) {
-    margin-bottom: 40px;
   }
   @media (max-width: 1050px) {
     font-size: 46px;
@@ -34,11 +27,10 @@
 }
 
 .make-your-grow {
-  z-index: 5;
-  font-size: 56px;
   font-weight: 700;
+  font-size: 56px;
+  z-index: 5;
   line-height: 1.3;
-  text-align: center;
   margin-bottom: 16px;
   @media (max-width: 1200px) {
     font-size: 50px;
@@ -58,6 +50,7 @@
 .wrapper {
   overflow: hidden;
 }
+
 .right-side {
   @media (max-width: 1520px) {
     max-width: 45%;
@@ -75,9 +68,11 @@
     display: none;
   }
 }
+
 .header-logo-pc, .nav-list-item a {
   outline: none;
 }
+
 .trade-now-text {
   font-weight: 700;
   font-size: 64px;
@@ -148,8 +143,7 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 4px;
-
-  height: 72px;
+  height: 70px;
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
@@ -169,15 +163,12 @@
   }
 
   &-white-fill {
+    background-color: #FFFFFF;
+    box-shadow: 0 15px 32px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
     margin-left: 25px;
-    background-color: #fff;
-    border: 1px solid #fff;
+    border: none;
     color: #0052FF;
-
-    &:hover {
-      background-color: #0052FF;
-      color: #fff;
-    }
 
     @media (max-width: 780px) {
       width: fit-content;
@@ -209,8 +200,6 @@
 
 .profit-badge {
   font-size: 12px;
-  padding: 5px 10px;
-  background-color: transparent;
   color: #06BC5A;
   line-height: 16px;
 

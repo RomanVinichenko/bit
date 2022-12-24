@@ -79,16 +79,16 @@ function Header() {
                            <li className="nav-list-item" id='hidden-id'>
                               <a href="/exchange">{t('exchangeText')}</a>
                            </li>
-                           <li className="nav-list-item"  id='hidden-id'>
+                           <li className="nav-list-item" id='hidden-id'>
                               <a href="/markets">{t('market')}</a>
                            </li>
-                           <li className="nav-list-item"  id='hidden-id'>
+                           <li className="nav-list-item" id='hidden-id'>
                               <a href="https://bityx.zendesk.com/hc/">{t('supportText')}</a>
                            </li>
-                           <li className="nav-list-item"  id='hidden-id'>
+                           <li className="nav-list-item" id='hidden-id'>
                               <a href="/">{t('buyCrypto')}</a>
                            </li>
-                           <li className="nav-list-item"  id='hidden-id'>
+                           <li className="nav-list-item" id='hidden-id'>
                               <a href="/rewards">{t('rewardsCenter')}</a>
                            </li>
                         </div>

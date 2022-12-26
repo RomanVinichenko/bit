@@ -46,6 +46,8 @@
 
 .phone1-main-new {
   display: none;
+  max-width: 100%;
+  width: 100%;
   @media (max-width: 750px) {
     display: block;
   }
@@ -103,6 +105,7 @@
     }
 
     @media (max-width: 750px) {
+      overflow: hidden;
       //background-size: cover;
       //background-repeat: no-repeat;
       //background-position: center center;

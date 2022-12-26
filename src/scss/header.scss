@@ -629,9 +629,9 @@
         padding-left: 0;
       }
 
-      .nav-list-item-btn {
-        display: none !important;
-      }
+      //.nav-list-item-btn {
+      //  display: none !important;
+      //}
     }
 
 
@@ -894,16 +894,10 @@
   }
 }
 
-@media (max-width: 992px) {
-  .sign-in-button {
-    display: none;
-  }
-}
-
 .logo-mob-sign {
   display: none;
   @media (max-width: 992px) {
-    display: block;
+    display: none;
   }
 }
 

@@ -64,13 +64,15 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
                         {t('reliableInstitutionalAccess')}
                      </span>
             </div>
-            <div className="partner-row">
-              <img src={fintech} className="partner-row-img" alt=""/>
-              <img src={galaxy_digital} className="partner-row-img" alt=""/>
-              <img src={hsbc} className="partner-row-img" alt=""/>
-              <img src={silvergate} className="partner-row-img" alt=""/>
-              <img src={sig} className="partner-row-img" alt=""/>
-              <img src={dukascopy} className="partner-row-img" alt=""/>
+            <div className="partner-wrap">
+              <div className="partner-row">
+                <img src={fintech} className="partner-row-img" alt=""/>
+                <img src={galaxy_digital} className="partner-row-img" alt=""/>
+                <img src={hsbc} className="partner-row-img" alt=""/>
+                <img src={silvergate} className="partner-row-img" alt=""/>
+                <img src={sig} className="partner-row-img" alt=""/>
+                <img src={dukascopy} className="partner-row-img" alt=""/>
+              </div>
             </div>
             {/*<div className='more-button-container'>*/}
             {/*  <NavLink to={`/${lang}`}>*/}

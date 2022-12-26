@@ -894,15 +894,42 @@
   }
 }
 
+@media (max-width: 992px) {
+  .sign-in-button {
+    display: none;
+  }
+}
+
+.logo-mob-sign {
+  display: none;
+  @media (max-width: 992px) {
+    display: block;
+  }
+}
+
 .display-control-options {
   padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
   position: relative;
   border-top: 1px solid #333333;
   padding-top: 30px;
   display: none;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 100%;
+
+  .website-settings-select {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .UserOptionsButton {
+    text-align: center;
+    margin: 0 auto;
+  }
+
 
   input:checked ~ .form-label-checkmark {
     color: #fff;

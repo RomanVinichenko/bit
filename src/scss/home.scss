@@ -44,9 +44,15 @@
   }
 }
 
+.phone1-main-new {
+  display: none;
+  @media (max-width: 750px) {
+    display: block;
+  }
+}
+
 .intro {
   &-section {
-
     position: relative;
 
     .email-input-main {
@@ -55,7 +61,6 @@
         max-width: 100%;
         min-width: 100%;
       }
-
     }
 
     .flex-main-wrapper {
@@ -98,13 +103,11 @@
     }
 
     @media (max-width: 750px) {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-image: url("../img/home/phone1.svg");
+      //background-size: cover;
+      //background-repeat: no-repeat;
+      //background-position: center center;
+      //background-image: url("../img/home/phone1.svg");
     }
-
-
 
     .h1-heading {
       margin: 0 0 15px;

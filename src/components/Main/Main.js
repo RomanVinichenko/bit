@@ -6,7 +6,7 @@ import galaxy_digital from '../../img/galaxy_digital.svg';
 import people from '../../img/people.png';
 import hsbc from '../../img/hsbc.svg';
 import silvergate from '../../img/silvergate.svg';
-import phone1 from '../../img/home/phone1.svg';
+import phones1 from '../../img/home/phone1-1.svg';
 import sig from '../../img/sig.svg';
 import dukascopy from '../../img/dukascopy.svg';
 import {ReactComponent as Portfel} from '../../img/home/portfel.svg';
@@ -36,7 +36,7 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
               <div className="intro-col">
                 <h1 className="trade-now-text">{t('tradeNow')}</h1>
                 <p className="better-trading-small text">{t('betterTrading')}</p>
-                <img className='phone1-main-new' src={phone1} alt="" />
+                <img className='phone1-main-new' src={phones1} alt="" />
                 <div className='flex-main-wrapper'>
                   <input value={emailValue} onChange={(e) => setEmailValue(e.target.value)}
                          type={"email"} placeholder={t('enterEmailAddress')}

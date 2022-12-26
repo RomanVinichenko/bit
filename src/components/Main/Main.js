@@ -20,7 +20,21 @@ import CurrencyPairs from '../СurrencyPairsModul/CurrencyPairs/CurrencyPairs';
 import {useTranslation} from 'react-i18next';
 import {NavLink, useParams} from 'react-router-dom';
 
+import Lottie from 'react-lottie-player'
+import lottieJson from '../../lot.json'
+
 const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
+  function lott() {
+    return (
+      <Lottie
+        play
+        norepeat
+        animationData={lottieJson}
+        // style={{ width: 1, height: 1000 }}
+      />
+    )
+  }
+
   const {t, i18n} = useTranslation()
   const {lang} = useParams(':lang')
   const [soonAvailable1, setSoonAvailable1] = useState(false)
@@ -33,6 +47,7 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
         <section className="intro-section">
           <div className="container-parent">
             <div className="intro-row">
+              <div className="main-lottie-anim">{lott()}</div>
               <div className="intro-col">
                 <h1 className="trade-now-text">{t('tradeNow')}</h1>
                 <p className="better-trading-small text">{t('betterTrading')}</p>

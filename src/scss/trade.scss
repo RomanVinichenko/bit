@@ -16,12 +16,26 @@
     @media (max-width: 1700px) {
       padding: 60px;
     }
+    @media (max-width: 1300px) {
+      background-position: left -200px bottom;
+    }
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+      background-position: left center;
+      background-image: url("../img/home/trade-item-bg-mob.svg");
+      padding: 60px 20px;
+    }
   }
+
   .trade-title {
     max-width: 50%;
     width: 100%;
     @media (max-width: 1300px) {
       max-width: 40%;
+    }
+    @media (max-width: 1000px) {
+      max-width: 100%;
     }
   }
 
@@ -33,6 +47,11 @@
     line-height: 1.3;
     @media (max-width: 1300px) {
       font-size: 50px;
+    }
+    @media (max-width: 1000px) {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 64px;
     }
   }
 
@@ -51,9 +70,11 @@
     margin-bottom: 50px;
   }
 }
+
 .trade-like-pro-right-mobile {
   display: none;
   position: relative;
+
   &::after {
     z-index: -1;
     position: absolute;
@@ -66,6 +87,7 @@
     background: radial-gradient(50% 50% at 50% 50%, #0052FF 0%, rgba(0, 82, 255, 0) 100%);
     filter: blur(40px);
   }
+
   @media (max-width: 1100px) {
     display: block;
     max-width: 80%;
@@ -75,6 +97,7 @@
     max-width: 100%;
   }
 }
+
 .trades-flex {
   max-width: 50%;
   width: 100%;
@@ -87,6 +110,11 @@
   @media (max-width: 1300px) {
     max-width: 60%;
   }
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-gap: 48px 0;
+    max-width: 100%;
+  }
 }
 
 .trade-item {
@@ -95,8 +123,8 @@
   align-items: center;
 
   &:not(:last-child) {
-    @media (max-width: 865px) {
-      margin-bottom: 50px;
+    @media (max-width: 1000px) {
+      margin-bottom: 8px;
     }
   }
 }
@@ -109,6 +137,11 @@
   @media (max-width: 1700px) {
     font-size: 60px;
     line-height: 72px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 56px;
+    line-height: 73px;
+    margin-bottom: 4px;
   }
 }
 
@@ -124,6 +157,9 @@
   position: relative;
   z-index: 2;
   width: 100%;
+  @media (max-width: 1400px) {
+    max-width: 500px;
+  }
   @media (max-width: 1100px) {
     max-width: 100%;
   }
@@ -251,6 +287,9 @@
   align-items: center;
   height: 70px;
   min-width: 267px;
+  @media (max-width: 1400px) {
+    min-width: 200px;
+  }
 }
 
 .mor-pro-traders-item-blue-bg {
@@ -303,6 +342,11 @@
     background: radial-gradient(50% 50% at 50% 50%, #0052FF 0%, rgba(0, 82, 255, 0) 100%);
     filter: blur(40px);
   }
+
+  @media (max-width: 1400px) {
+    max-width: 700px;
+  }
+
   @media (max-width: 1100px) {
     display: none;
   }

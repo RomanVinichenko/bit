@@ -154,7 +154,23 @@
   }
 }
 
+
+.nav-list-mobile {
+  display: none;
+  @media (max-width: 992px) {
+    display: block;
+  }
+
+}
+
+.nav-list-mobile-auth {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
 .header {
+  z-index: 30;
   position: absolute;
   top: 0;
   left: 0;
@@ -165,6 +181,7 @@
   color: $white;
   background: transparent;
   border-bottom: 1px solid #252525;
+
   &::after {
     position: absolute;
     top: 0;
@@ -172,7 +189,6 @@
     width: 100%;
     height: 100%;
     background-color: #1F1F21;
-    //z-index: -1;
     content: "";
   }
 
@@ -190,8 +206,11 @@
   }
 
   @media (max-width: 992px) {
-    padding: 2px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
     border: none;
+    height: 68px;
   }
 }
 
@@ -488,11 +507,9 @@
   }
 
   @media (max-width: 992px) {
-    height: 42px;
+    height: 68px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 15px;
-    padding-top: 4px;
   }
 }
 
@@ -632,7 +649,7 @@
     width: 32px;
     height: 32px;
     position: fixed;
-    top: 11px;
+    top: 18px;
     right: 20px;
     transition: all 0.17s !important;
     align-items: center;
@@ -847,12 +864,20 @@
 .display-control-options {
   padding-left: 20px;
   position: relative;
-  border-top: 1px solid #EDEDED;
+  border-top: 1px solid #333333;
   padding-top: 30px;
   display: none;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+
+  .website-settings-lang, .website-settings-currency {
+    color: #fff;
+  }
+
+  .form-label-checkmark {
+    border: 2px solid #fff;
+  }
 
   .website-settings-list {
     li {
@@ -886,7 +911,7 @@
 
     &.lang-is-open,
     &.currency-is-open {
-      background: #FFFFFF;
+      background: #1F1F21;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
       display: block;
       margin-left: -40px;

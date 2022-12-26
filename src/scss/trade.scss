@@ -13,15 +13,27 @@
     background-repeat: no-repeat;
     background-position: left bottom;
     background-image: url("../img/home/trade-item-bg.svg");
+    @media (max-width: 1700px) {
+      padding: 60px;
+    }
+  }
+  .trade-title {
+    max-width: 50%;
+    width: 100%;
+    @media (max-width: 1300px) {
+      max-width: 40%;
+    }
   }
 
   .trade-title-span {
-    max-width: 50%;
     width: 100%;
     display: block;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.3;
+    @media (max-width: 1300px) {
+      font-size: 50px;
+    }
   }
 
   @media (max-width: 1300px) {
@@ -39,13 +51,42 @@
     margin-bottom: 50px;
   }
 }
-
+.trade-like-pro-right-mobile {
+  display: none;
+  position: relative;
+  &::after {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(50% 50% at 50% 50%, #0052FF 0%, rgba(0, 82, 255, 0) 100%);
+    filter: blur(40px);
+  }
+  @media (max-width: 1100px) {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  @media (max-width: 620px) {
+    max-width: 100%;
+  }
+}
 .trades-flex {
   max-width: 50%;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 72px 240px;
+  @media (max-width: 1700px) {
+    grid-gap: 42px 100px;
+  }
+  @media (max-width: 1300px) {
+    max-width: 60%;
+  }
 }
 
 .trade-item {
@@ -65,6 +106,10 @@
   font-size: 72px;
   line-height: 94px;
   margin-bottom: 8px;
+  @media (max-width: 1700px) {
+    font-size: 60px;
+    line-height: 72px;
+  }
 }
 
 .trade-item-small-text {
@@ -79,6 +124,10 @@
   position: relative;
   z-index: 2;
   width: 100%;
+  @media (max-width: 1100px) {
+    max-width: 100%;
+  }
+
 }
 
 .trade-like-pro-text {
@@ -123,10 +172,6 @@
   justify-content: space-between;
 }
 
-.trade-like-pro-right {
-
-}
-
 .trade-like-pro-item-big-text-1,
 .trade-like-pro-item-big-text-2,
 .trade-like-pro-item-big-text-3 {
@@ -139,9 +184,11 @@
   @media (max-width: 1200px) {
     font-size: 26px;
   }
+  @media (max-width: 1100px) {
+    text-align: center;
+  }
   @media (max-width: 900px) {
     font-size: 22px;
-    text-align: center;
   }
   @media (max-width: 650px) {
     font-size: 20px;
@@ -157,9 +204,10 @@
   width: 100%;
   display: block;
   color: #7383A5;
-
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     text-align: center;
+  }
+  @media (max-width: 900px) {
     padding-right: 0;
   }
 }
@@ -178,10 +226,10 @@
 
 .more-pro-traders-flex {
   display: flex;
-
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     justify-content: center;
   }
+
   @media (max-width: 650px) {
     flex-direction: column;
     align-items: center;
@@ -255,4 +303,8 @@
     background: radial-gradient(50% 50% at 50% 50%, #0052FF 0%, rgba(0, 82, 255, 0) 100%);
     filter: blur(40px);
   }
+  @media (max-width: 1100px) {
+    display: none;
+  }
+
 }

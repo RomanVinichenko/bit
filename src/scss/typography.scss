@@ -7,22 +7,22 @@
   display: block;
   margin-bottom: 40px;
 
-
   @media (max-width: 1200px) {
     font-size: 50px;
   }
   @media (max-width: 1050px) {
     font-size: 46px;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     text-align: center;
+  }
+  @media (max-width: 900px) {
     margin-bottom: 20px;
     order: 5;
   }
   @media (max-width: 700px) {
     font-size: 32px;
     margin-bottom: 15px;
-    color: #000;
   }
 }
 
@@ -43,7 +43,6 @@
   @media (max-width: 700px) {
     font-size: 32px;
     margin-bottom: 15px;
-    color: #000;
   }
 }
 
@@ -94,6 +93,7 @@
     max-width: 100%;
     margin: 0 auto 15px;
     text-align: center;
+    font-weight: 500;
   }
 }
 

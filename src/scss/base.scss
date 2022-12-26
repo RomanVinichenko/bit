@@ -80,11 +80,20 @@ button {
 }
 
 .container-parent {
-  max-width: 1520px;
+  max-width: 1640px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 80px;
   position: relative;
   width: 100%;
+  @media (max-width: 1400px) {
+    padding: 0 60px;
+  }
+  @media (max-width: 1200px) {
+    padding: 0 40px;
+  }
+  @media (max-width: 750px) {
+    padding: 0 20px;
+  }
 }
 
 @import 'typography';

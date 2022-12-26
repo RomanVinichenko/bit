@@ -23,6 +23,10 @@
       height: 100%;
       left: 0;
       content: url("../img/home/subscribe-bg.svg");
+      @media (max-width: 900px) {
+        left: -40%;
+        bottom: -25%;
+      }
     }
   }
 

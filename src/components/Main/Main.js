@@ -162,12 +162,14 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
         <section className='trade-like-pro-section'>
           <div className='container-parent'>
             <div className='trade-like-pro-main-flex'>
-
               <div className='trade-like-pro-right'>
                 <img src={laptop}/>
               </div>
               <div className='trade-like-pro-flex'>
                 <span className='trade-like-pro-main-flex-h1-heading'>{t('tradeLikePro')}</span>
+                <div className='trade-like-pro-right-mobile'>
+                  <img src={laptop}/>
+                </div>
                 <div className='trade-like-pro-left'>
                   <div className='trade-like-pro-item-absoulte-flex'>
                     <div className='trade-like-pro-item'>

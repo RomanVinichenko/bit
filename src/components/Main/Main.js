@@ -7,6 +7,8 @@ import people from '../../img/people.png';
 import hsbc from '../../img/hsbc.svg';
 import silvergate from '../../img/silvergate.svg';
 import phones1 from '../../img/home/phone1-1.svg';
+import phoneMob1 from '../../img/home/phone-mob-1.svg';
+import phoneMob2 from '../../img/home/phone-mob-2.svg';
 import sig from '../../img/sig.svg';
 import dukascopy from '../../img/dukascopy.svg';
 import {ReactComponent as Portfel} from '../../img/home/portfel.svg';
@@ -24,14 +26,17 @@ import Lottie from 'react-lottie-player'
 import lottieJson from '../../lot.json'
 
 const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
+
   function lott() {
     return (
-      <Lottie
-        play
-        norepeat
-        animationData={lottieJson}
-        // style={{ width: 1, height: 1000 }}
-      />
+      <div>
+        <Lottie
+          loop={false}
+          autoPlay={false}
+          play
+          animationData={lottieJson}
+        />
+      </div>
     )
   }
 
@@ -51,7 +56,7 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
               <div className="intro-col">
                 <h1 className="trade-now-text">{t('tradeNow')}</h1>
                 <p className="better-trading-small text">{t('betterTrading')}</p>
-                <img className='phone1-main-new' src={phones1} alt="" />
+                <img className='phone1-main-new' src={phones1} alt=""/>
                 <div className='flex-main-wrapper'>
                   <input value={emailValue} onChange={(e) => setEmailValue(e.target.value)}
                          type={"email"} placeholder={t('enterEmailAddress')}
@@ -65,7 +70,13 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
               </div>
               <div className="intro-col right-side">
                 <div className='phones-main'>
-                  {/*<img className='phone1-main' src={phone1}/>*/}
+                  <div className="phones-main-one">
+                  <img className='phone1-main' src={phoneMob1}/>
+                  </div>
+                  <div className="phones-main-two">
+                  <img className='phone2-main' src={phoneMob2}/>
+                  </div>
+
                 </div>
               </div>
             </div>

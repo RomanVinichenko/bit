@@ -1,6 +1,5 @@
 import ios from '../../img/icons/ios.svg';
 import android from '../../img/icons/android.svg';
-// import phone1 from '../../img/home/phone1.png';
 import cubic6 from '../../img/home/cubic6.png';
 import cubic7 from '../../img/home/cubic7.png';
 import cubic8 from '../../img/home/cubic8.png';

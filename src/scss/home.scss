@@ -98,14 +98,12 @@
     }
 
     @media (max-width: 750px) {
-      background-size: 110%;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
       background-image: url("../img/home/phone1.svg");
     }
-    @media (max-height: 750px) {
-      background-size: 80%;
-    }
+
 
 
     .h1-heading {

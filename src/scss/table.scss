@@ -221,18 +221,13 @@
         &::after {
           position: absolute;
           top: 50%;
-          left: 0;
+          left: -24px;
           border-radius: 2px;
           background-color: #D2D6DE;
           width: 1px;
           height: 28px;
           content: "";
           transform: translateY(-50%);
-        }
-
-        @media (max-width: 1280px) {
-          padding-left: 10px;
-          margin-left: 10px;
         }
       }
     }

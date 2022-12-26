@@ -776,6 +776,11 @@
   align-items: center;
   cursor: pointer;
 
+  .form-label-checkmark {
+    border: 2px solid #828282;
+  }
+
+
   &:hover {
     .website-settings-choice {
       opacity: 1;
@@ -797,6 +802,16 @@
 
   .website-language {
     margin-right: 3px;
+
+  }
+
+  .website-settings-lang {
+    color: #fff;
+  }
+
+  .website-settings-currency {
+    color: #fff;
+
   }
 
   .website-currency {
@@ -810,7 +825,6 @@
 
   .website-settings-choice {
     cursor: default;
-    background-color: #FFFFFF;
     z-index: 20;
     padding: 20px;
     opacity: 0;
@@ -818,12 +832,32 @@
     position: absolute;
     right: 0;
     top: 40px;
-    box-shadow: 0 20px 40px rgb(0 0 0 / 50%);
-    border-radius: 4px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 30px;
     transition: all 0.3s;
+
+    background-color: #2C2C2C;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+
+  input:checked ~ .form-label-checkmark {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .form-label input[type=radio] + .form-label-checkmark:after {
+    background-color: #fff;
+  }
+
+  .form-label {
+
+    &:hover {
+      .form-label-checkmark {
+        border: 2px solid #fff !important;
+      }
+    }
   }
 
   .website-settings-close {
@@ -834,9 +868,8 @@
   .website-settings-heading {
     display: block;
     padding-bottom: 15px;
-    margin-bottom: 20px;
-    color: #000;
-    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    color: #fff;
   }
 
   .website-settings-list {
@@ -870,6 +903,16 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
+
+  input:checked ~ .form-label-checkmark {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .form-label input[type=radio] + .form-label-checkmark:after {
+
+    background-color: #fff;
+  }
 
   .website-settings-lang, .website-settings-currency {
     color: #fff;

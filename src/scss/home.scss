@@ -79,7 +79,8 @@
     @media (max-width: 750px) {
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: top center;
+      object-position: left;
       background-image: url("../img/home/phone1.png");
     }
 

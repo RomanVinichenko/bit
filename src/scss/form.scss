@@ -20,6 +20,7 @@
     font-size: 18px;
     line-height: 23px;
   }
+
   @media (max-width: 550px) {
     min-width: 300px;
   }
@@ -54,6 +55,7 @@
     line-height: 23px;
     font-weight: 400;
   }
+
   @media (max-width: 1300px) {
     min-width: 320px;
   }
@@ -97,6 +99,7 @@
   width: fit-content;
   max-width: 100%;
 }
+
 /* The container */
 .form-label {
   display: flex;
@@ -139,7 +142,7 @@
 
 /* On mouse-over, add a grey background color */
 .form-label:hover input ~ .form-label-checkmark {
-  border: 2px solid $blue-color;
+  //border: 2px solid $blue-color;
 }
 
 /* When the checkbox is checked, add a blue background */

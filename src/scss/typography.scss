@@ -149,13 +149,21 @@
     box-shadow: 0 15px 32px rgba(255, 255, 255, 0.25);
     border-radius: 4px;
     margin-left: 25px;
-    border: none;
+    transition: all 0.7s;
     color: #0052FF;
+    border: 1px solid #fff;
 
     @media (max-width: 780px) {
       width: fit-content;
       margin-left: 0;
       margin-top: 25px;
+    }
+
+    &:hover {
+      background-color: #0066FF;
+      box-shadow: 0 30px 24px rgba(0, 82, 255, 0.25);
+      color: #fff;
+      border: 1px solid #fff;
     }
   }
 

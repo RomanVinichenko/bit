@@ -99,6 +99,7 @@
 
 .phone1-main-new {
   display: none;
+  margin: auto;
   max-width: 100%;
   width: 100%;
   transform: scale(1.2);
@@ -110,7 +111,7 @@
 .main-lottie-anim {
   position: absolute;
   z-index: -1;
-  top: 55%;
+  top: 50%;
   width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -174,7 +175,7 @@
       display: flex;
       flex-direction: column;
       max-height: 100%;
-      padding: 90px 0 10px;
+      padding: 120px 0 10px;
       align-items: center;
     }
   }

@@ -50,9 +50,10 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
     <OptionsContext.Provider value={{options, setOptions}}>
       <div className="wrapper">
         <section className="intro-section">
+          <div className="main-lottie-anim">{lott()}</div>
+
           <div className="container-parent">
             <div className="intro-row">
-              <div className="main-lottie-anim">{lott()}</div>
               <div className="intro-col">
                 <h1 className="trade-now-text">{t('tradeNow')}</h1>
                 <p className="better-trading-small text">{t('betterTrading')}</p>

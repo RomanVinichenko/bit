@@ -6,6 +6,7 @@ import galaxy_digital from '../../img/galaxy_digital.svg';
 import people from '../../img/people.png';
 import hsbc from '../../img/hsbc.svg';
 import silvergate from '../../img/silvergate.svg';
+import phones1 from '../../img/home/phones-mobile.svg';
 import phoneMob1 from '../../img/home/phone-mob-1.svg';
 import phoneMob2 from '../../img/home/phone-mob-2.svg';
 import sig from '../../img/sig.svg';
@@ -55,7 +56,7 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
               <div className="intro-col">
                 <h1 className="trade-now-text">{t('tradeNow')}</h1>
                 <p className="better-trading-small text">{t('betterTrading')}</p>
-                {/*<img className='phone1-main-new' src={phones1} alt=""/>*/}
+                <img className='phone1-main-new' src={phones1} alt=""/>
                 <div className='flex-main-wrapper'>
                   <input value={emailValue} onChange={(e) => setEmailValue(e.target.value)}
                          type={"email"} placeholder={t('enterEmailAddress')}

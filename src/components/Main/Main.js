@@ -1,6 +1,7 @@
 import ios from '../../img/icons/ios.svg';
 import android from '../../img/icons/android.svg';
 import laptop from '../../img/home/laptop.png';
+import laptopBlack from '../../img/home/laptop-black.png';
 import fintech from '../../img/fintech.svg';
 import galaxy_digital from '../../img/galaxy_digital.svg';
 import people from '../../img/people.png';
@@ -16,6 +17,7 @@ import {ReactComponent as Reccuring} from '../../img/home/reccuring.svg';
 import {ReactComponent as Vault} from '../../img/home/vault.svg';
 import {ReactComponent as Mobile} from '../../img/home/mobile.svg';
 import portfolio from '../../img/home/portfolio.png';
+import portfolioBlack from '../../img/home/portfolio-black.png';
 import {useEffect, useState} from 'react';
 import {OptionsContext} from '../../App';
 import CurrencyPairs from '../СurrencyPairsModul/CurrencyPairs/CurrencyPairs';
@@ -51,7 +53,6 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
       <div className="wrapper">
         <section className="intro-section">
           <div className="main-lottie-anim">{lott()}</div>
-
           <div className="container-parent">
             <div className="intro-row">
               <div className="intro-col">
@@ -72,12 +73,11 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
               <div className="intro-col right-side">
                 <div className='phones-main'>
                   <div className="phones-main-one">
-                  <img className='phone1-main' src={phoneMob1}/>
+                    <img className='phone1-main' src={phoneMob1}/>
                   </div>
                   <div className="phones-main-two">
-                  <img className='phone2-main' src={phoneMob2}/>
+                    <img className='phone2-main' src={phoneMob2}/>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -135,7 +135,7 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
                   </div>
                 </div>
                 <div className='portfolio-item'>
-                  <div className='portfolio-svg'>
+                  <div className='portfolio-svg svg-light-1'>
                     <Vault/>
                   </div>
                   <div className='portfolio-item-text'>
@@ -144,7 +144,7 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
                   </div>
                 </div>
                 <div className='portfolio-item'>
-                  <div className='portfolio-svg'>
+                  <div className='portfolio-svg svg-light'>
                     <Mobile/>
                   </div>
                   <div className='portfolio-item-text'>
@@ -153,8 +153,9 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
                   </div>
                 </div>
               </div>
-              <div className='make-your-portfolio-right'>
+              <div className='make-your-portfolio-right portfolio-black'>
                 <img src={portfolio}/>
+                <img src={portfolioBlack}/>
               </div>
             </div>
           </div>
@@ -191,11 +192,13 @@ const Main = ({emailValue, setEmailValue, emailValue2, setEmailValue2}) => {
             <div className='trade-like-pro-main-flex'>
               <div className='trade-like-pro-right'>
                 <img src={laptop}/>
+                <img src={laptopBlack}/>
               </div>
               <div className='trade-like-pro-flex'>
                 <span className='trade-like-pro-main-flex-h1-heading'>{t('tradeLikePro')}</span>
                 <div className='trade-like-pro-right-mobile'>
                   <img src={laptop}/>
+                  <img src={laptopBlack}/>
                 </div>
                 <div className='trade-like-pro-left'>
                   <div className='trade-like-pro-item-absoulte-flex'>

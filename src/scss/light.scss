@@ -1,0 +1,210 @@
+.light-bg {
+  background-color: #fff;
+
+  .trade-now-text {
+    color: #000000;
+  }
+
+  .email-input-main {
+    color: #000000;
+  }
+
+  .header {
+    background-color: #fff;
+    border-bottom: 1px solid #D2D2D2;
+    color: #0A0B0D;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  .header-logo-pc {
+    path {
+      &:not(:first-child) {
+        fill: #0A0B0D;
+      }
+    }
+  }
+
+  .btn-primary-blue {
+    color: #fff;
+  }
+
+  .partner-row::after {
+    background-image: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 27.07%, rgba(255, 255, 255, 0) 68.56%, #FFFFFF 100%);
+  }
+
+  .table-section {
+    color: #0A0B0D !important;
+  }
+
+  .table-above-text a {
+    color: #0A0B0D;
+  }
+
+  .intro-swiper-button-prev,
+  .intro-swiper-button-next {
+    &::after {
+      background-image: url(../img/icons/arrow-right-black.svg) !important;
+    }
+  }
+
+  .table-container {
+    background-color: #FFFFFF;
+  }
+
+  .b-nav-tab.active,
+  .b-nav-tab:hover {
+    color: #0A0B0D;
+  }
+
+  .table tr {
+    background-color: #FBFCFF;
+  }
+
+  .table-item {
+    color: #0A0B0D;
+  }
+
+  .portfolio-section {
+    color: #0A0B0D;
+
+    .portfolio-svg {
+      path {
+        fill: #0A0B0D
+      }
+    }
+  }
+
+  .svg-light {
+    path:nth-child(1) {
+      fill: #8594AA;
+    }
+
+    path:nth-child(2) {
+      fill: #8594AA;
+    }
+
+    path:nth-child(3) {
+      fill: #8594AA;
+    }
+
+    path:nth-child(4) {
+      fill: #8594AA;
+    }
+
+    path:nth-child(5) {
+      fill: #8594AA;
+    }
+
+    path:nth-child(6) {
+      fill: #8594AA;
+    }
+
+    path:nth-child(7) {
+      fill: #19191C;
+    }
+
+    path:nth-child(8) {
+      fill: #8594AA;
+    }
+
+    path:nth-child(9) {
+      fill: #fff;
+    }
+
+    path:nth-child(10) {
+      fill: #0A0B0D;
+    }
+
+    path:nth-child(11) {
+      fill: #0A0B0D;
+    }
+  }
+
+  .svg-light-1 {
+    path:nth-child(4) {
+      fill: #fff;
+    }
+
+    path:nth-child(5) {
+      fill: #0A0B0D;
+    }
+
+    path:nth-child(6) {
+      fill: #fff;
+    }
+
+    path:nth-child(7) {
+      fill: #0A0B0D;
+    }
+  }
+
+  .portfolio-black {
+    img:first-of-type {
+      display: none;
+    }
+
+    img:last-of-type {
+      display: block;
+    }
+  }
+
+  .trade-like-pro-section {
+    color: #0A0B0D;
+  }
+
+  .more-pro-traders-item-blue-border {
+    color: #0052FF;
+  }
+
+  .trade-like-pro-right {
+    img:last-of-type {
+      display: block;
+    }
+
+    img:first-of-type {
+      display: none;
+    }
+  }
+
+  .trade-like-pro-right-mobile {
+    img:last-of-type {
+      display: block;
+    }
+
+    img:first-of-type {
+      display: none;
+    }
+  }
+
+  .app-section {
+    .app-row .h2-heading {
+      color: #0A0B0D;
+    }
+
+    .app-row .text-big {
+      color: #1F1F21;
+    }
+  }
+
+  .app-get .app-link {
+    background-color: #0052FF;
+    color: #fff;
+
+    img {
+      filter: invert(1);
+    }
+  }
+
+  .app-get {
+    span, b {
+      color: #fff;
+    }
+  }
+
+  .text-download-access {
+    color: #7383A5;
+  }
+}

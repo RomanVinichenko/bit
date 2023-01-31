@@ -74,6 +74,12 @@
 .trade-like-pro-right-mobile {
   display: none;
   position: relative;
+  img:last-of-type {
+    display: none;
+  }
+  img:first-of-type {
+    display: block;
+  }
 
   &::after {
     z-index: -1;
@@ -340,6 +346,12 @@
   transform: translateY(-50%);
   max-width: 900px;
   z-index: 2;
+  img:last-of-type {
+    display: none;
+  }
+  img:first-of-type {
+    display: block;
+  }
 
   &::after {
     z-index: -1;
@@ -356,7 +368,10 @@
   }
 
   @media (max-width: 1400px) {
-    max-width: 700px;
+    max-width: 650px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 580px;
   }
 
   @media (max-width: 1100px) {

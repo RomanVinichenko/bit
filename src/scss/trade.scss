@@ -302,7 +302,7 @@
   background-image: linear-gradient(0deg, #0052FF, #0052FF), linear-gradient(135.67deg, #047FFE 0%, #00007F 99%);
   border: none;
   margin-left: 16px;
-  transition: all 0.7s;
+  transition: all 0.3s;
 
   @media (max-width: 650px) {
     margin-left: 0;
@@ -317,7 +317,7 @@
 .more-pro-traders-item-blue-border {
   background-color: rgba(0, 82, 255, 0.1);
   border: 1px solid #0052FF;
-  transition: all 0.7s;
+  transition: all 0.3s;
 
   &:hover {
     background-color: #0066FF;

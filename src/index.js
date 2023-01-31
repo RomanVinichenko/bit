@@ -8,7 +8,9 @@ import MainLoader from './ui/MainLoader/MainLoader';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
+
    <>
+
       <Suspense fallback={<MainLoader />}>
          <App />
       </Suspense>

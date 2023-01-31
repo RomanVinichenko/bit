@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-  transition: 0.7s;
+  transition: 0.3s;
   padding: 13px 40px;
   gap: 10px;
   background: var(--color-active);
@@ -17,7 +17,7 @@ const Button = styled.button`
 
   &:hover,
   &:focus {
-    transition: 0.7s;
+    transition: 0.3s;
     background-color: white;
     color: #0052FF;
   }

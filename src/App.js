@@ -21,6 +21,7 @@ const Home = () => {
    const [emailValue2, setEmailValue2] = useState('')
    const [options, setOptions] = useState({ currency: '', currencySign: '' });
 
+
    return (
       <OptionsContext.Provider value={{ options, setOptions }}>
          <Router>

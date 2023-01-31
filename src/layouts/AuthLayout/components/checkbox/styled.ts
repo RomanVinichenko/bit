@@ -60,4 +60,4 @@ const Container = styled.label`
   }
 `
 
-export { Container }
+export {Container}

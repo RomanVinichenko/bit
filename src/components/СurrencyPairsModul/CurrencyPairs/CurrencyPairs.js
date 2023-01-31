@@ -12,7 +12,7 @@ function CurrencyPairs() {
 
    useEffect(() => {
       // addclass to body
-      document.body.classList.add('light-bg');
+      document.body.classList.add('dark-bg');
       new Swiper('.intro-swiper', {
          // Optional parameters
          autoplay: {

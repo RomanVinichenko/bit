@@ -7,6 +7,7 @@ import bityx from '../../../img/logos/bityx.svg'
 import {ReactComponent as Logo} from '../../../img/logo.svg'
 import UserOptions from '../UserOptions/UserOptions';
 import api from '../../../api'
+
 function Header() {
    const { t } = useTranslation();
    const [auth,setAuth] = useState({})
@@ -19,12 +20,27 @@ function Header() {
       let toggleButton = document.getElementById('slideout-toggle');
       let closeButton = document.getElementById('slideout-close');
       let navListItem = document.querySelectorAll('#hidden-id')
+      const switcherDesk = document.querySelector(".switcher-desk")
+      const switcherMobile = document.querySelector(".switcher-mobile")
+      const body = document.body
 
       // Toggle Menu
       toggleButton.addEventListener('click', function (e) {
          e.preventDefault();
          menu.classList.toggle('is-open');
          document.body.classList.add('header-open');
+      });
+      switcherDesk.addEventListener('click', function () {
+         switcherDesk.classList.toggle("switcher-dark")
+         switcherDesk.classList.toggle("switcher-light")
+         body.classList.toggle("light-bg")
+         body.classList.toggle("dark-bg")
+      });
+      switcherMobile.addEventListener('click', function () {
+         switcherMobile.classList.toggle("switcher-dark")
+         switcherMobile.classList.toggle("switcher-light")
+         body.classList.toggle("light-bg")
+         body.classList.toggle("dark-bg")
       });
 
       // Close Menu
@@ -97,6 +113,11 @@ function Header() {
                         </div>
                      </ul>
                      <HeadreUserActions auth={auth.authorized} />
+                     <div className="switcher switcher-dark switcher-desk">
+                        <button>
+                           <span></span>
+                        </button>
+                     </div>
                   </div>
             </nav>
             <a id="slideout-toggle" className="slideout-toggle" href="#">

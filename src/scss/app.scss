@@ -277,3 +277,80 @@
 img {
   max-width: 100%;
 }
+
+.switcher {
+  cursor: pointer;
+  background: #0052FF;
+  border-radius: 36px;
+  width: 60px;
+  height: 32px;
+  margin: auto 0;
+  position: relative;
+  z-index: 2;
+
+  &::after,
+  &::before {
+    position: absolute;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: all .3s;
+  }
+
+  &::after {
+    right: 2px;
+    content: url(../img/switch-light.svg);
+  }
+
+  &::before {
+    left: 2px;
+    content: url(../img/switch-dark.svg);
+  }
+
+  span {
+    transition: all 0.3s;
+    z-index: -1;
+    width: 28px;
+    height: 28px;
+    display: block;
+    left: 2px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.switcher-dark {
+  &::before {
+    opacity: 1;
+  }
+}
+
+.switcher-light {
+  span {
+    transform: translateY(-50%) translateX(28px);
+  }
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+.switcher-desk {
+  display: block;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.switcher-mobile {
+  display: none;
+  margin-left: 30px;
+  @media (max-width: 992px) {
+    display: block;
+  }
+}

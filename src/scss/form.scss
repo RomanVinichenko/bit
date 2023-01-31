@@ -181,7 +181,7 @@
 
 .form-label input[type="radio"] + .form-label-checkmark:after {
   border-radius: 50%;
-  border-width: 2px;
+  border: 0;
   background-color: $blue-color;
   width: 6px;
   height: 6px;
